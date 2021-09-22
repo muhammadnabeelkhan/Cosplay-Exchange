@@ -29,17 +29,20 @@ menuToggler.addEventListener("click",()=>{
         logoDyna.classList.toggle("dynamic-background-changer")
         console.log("logo bg " + logoDyna.classList);
         zoom.forEach((s)=>{
-         
             s.style.height="30px";
-            s.style.width="30px"
+            s.style.width="30px";
+
         });
+        hamburgerBackground.style.width = "70px";
+        
         
         console.log("done");
     }
     else{
 
         logoDyna.classList.add("dynamic-background-changer");
-        hamburgerBackground.classList.add("dynamic-background-changer")
+        hamburgerBackground.classList.add("dynamic-background-changer");
+        hamburgerBackground.style.width = "268px";
 
         // IncreaseSideFont.style.fontSize="1.3rem";
 

@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stsylesheet"
+    />D
     <!-- Boxicons CSS -->
     <link
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="all.min.css" />
 
     <link rel="stylesheet" href="style.css" />
-    <title>dashboard</title>
+    <title>Sell</title>
   </head>
   <body>
     <!-- ##################### Header starting ########################## -->
@@ -52,7 +52,7 @@
           <div class="row g-0 align-items-center ps-lg-4">
             <div class="col-lg-3 pe-md-3 pt-lg-0 pt-4">
               <div class="gallery-info">
-                <h3>Dashboard</h3>
+                <h3>My Profile</h3>
                 <small>Some text or maybe not</small>
               </div>
             </div>
@@ -78,7 +78,7 @@
                 <li>
                   <div class="text-center header-upper-menu">
                     <a href="#" class="d-flex align-items-center">
-                      <span class="link_name ms-lg-2">Download App</span>
+                      <span class="link_name ms-lg-5">Download App</span>
                       <i class="bx bxs-chevron-down arrow ms-3"></i>
                     </a>
                   </div>
@@ -103,13 +103,14 @@
         </div>
       </div>
     </header>
+
     <ul class="hamburger-menu m-0 nav-link list-unstyled">
       <li class="hamburger-upper">
-        <img src="images/bx-menu.svg" alt="Hamburger Menu" />
+        <img src="images/bx-menu.svg" alt="" />
       </li>
     </ul>
 
-    <main>
+    <main class="profile-background">
       <div class="sidebar">
         <ul class="nav-links">
           <li>
@@ -173,8 +174,7 @@
           <li>
             <a href="#" title="Dashboard">
               <img src="images/dashboard.svg" class="zoom" alt="Dashboard" />
-              <span class="link_name golden-color">Dashboard</span
-              ><span class="active-dot"></span>
+              <span class="link_name">Dashboard</span>
             </a>
             <ul class="sub-menu blank">
               <li><a class="link_name" href="#">Dashboard</a></li>
@@ -237,22 +237,55 @@
         <!-- </div> -->
       </div>
 
-      <section class="information m-5">
-        <div class="chat">
-          <div class="row">
-            <div class="col-md-4">
-              <ul class="list-unstyled d-flex user-information">
-                <li>
-                  <img
-                    src="images/owais.jpg"
-                    class="d-block user-image"
-                    alt="user Image"
-                  />
-                </li>
-                <li><span class="user-name"> Nabeel Khan </span></li>
-              </ul>
+      <section class="profile-info">
+        <div class="profile-content">
+          <div class="profile-image mb-1 text-center mt-5 pt-5">
+            <img src="images/spider.jpeg" class="img-fluid w-100" alt="" />
+
+            <p class="profile-image-description">I am __________</p>
+          </div>
+          <div class="remarks text-center">
+            <ul class="remarks list-unstyled d-flex justify-content-center">
+              <li>
+                <a href="#">
+                  <img src="images/single-stars.svg" class="img-fluid" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/single-stars.svg" class="img-fluid" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/single-stars.svg" class="img-fluid" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/single-stars.svg" class="img-fluid" alt=""
+                /></a>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-primary px-3"> Edit my profile </a>
+          </div>
+          <div class="switch-button mt-2 pb-5 mb-3">
+            <!-- Rounded switch -->
+            <div
+              class="
+                status-info
+                d-flex
+                align-items-center
+                justify-content-center
+                mt-3
+              "
+            >
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+              <span class="status ps-2">Online status</span>
             </div>
-            <div class="col-md-8"></div>
           </div>
         </div>
       </section>

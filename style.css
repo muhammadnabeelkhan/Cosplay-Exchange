@@ -307,12 +307,15 @@ header {
   justify-content: space-around;
 }
 
-.brand-imag {
-  transition: all 0.6s ease-in-out;
+.brand-image {
+  transition: all 0.5s ease;
+  background-color: transparent;
 }
 
 .brand-image img {
   width: 268px;
+  height: auto;
+  background-color: transparent;
 }
 
 .gallery-info {
@@ -489,7 +492,8 @@ input.form-control ~ a {
 @media screen and (min-width: 1700px) {
   .alert-icons .notification-counter.bell {
     top: 12px;
-  }.alert-icons .notification-counter.cart {
+  }
+  .alert-icons .notification-counter.cart {
     top: 14px;
   }
 }
@@ -503,10 +507,10 @@ input.form-control ~ a {
     right: 12px;
   }
   .alert-icons .notification-counter {
-    top: 17%!important;
+    top: 17% !important;
   }
   .alert-icons .notification-counter.cart {
-    top: 18px!important;
+    top: 18px !important;
     right: 0;
   }
 }
@@ -576,7 +580,14 @@ main {
     flex-grow: 1;
   }
 }
-
+@media screen and (max-width: 991px) {
+  .header-left-content {
+    background-color: var(--light-black);
+  }
+  .hamburger-menu {
+    width: 60px;
+  }
+}
 @media screen and (max-width: 960px) {
   .sidebar.close {
     display: none;
@@ -681,7 +692,19 @@ main {
     text-align: left;
   }
 }
-
+/* ########## for custom checkbox align auto for sell page  */
+@media screen and (max-width: 459px) {
+  .some-checkbox-information-btn  li{
+    margin: auto !important;
+    padding: 18px !important;
+  }
+}
+@media screen and (max-width: 432px) {
+  #loginSlider, #registerSlider{
+    padding: 12px !important;
+    font-size: 1rem !important;
+  }
+}
 /* ################## 2nd page styling start ###############*/
 .p-50 {
   padding: 50px !important;
@@ -720,7 +743,7 @@ main {
   background-size: cover !important;
   position: relative;
   top: 0%;
-  width: 100%;
+  width: calc(100% - 282px);
 }
 .information .parentOfSearch input {
   background: rgba(255, 255, 255, 0.13) !important;
@@ -1008,6 +1031,7 @@ main {
 }
 /* ################## 4th page styling end ############## */
 /* ################# Sell/List ####################### */
+.sell-section{}
 .cdcd {
   color: var(--CDCD);
 }
@@ -1050,6 +1074,11 @@ main {
 .small-box .btn-primary:hover {
   background: rgba(255, 255, 255, 0.14);
   backdrop-filter: blur(14px);
+}
+.small-box.active {
+  border-style: groove;
+  border-width: 2px;
+  border-color: #efa621;
 }
 .active-smallbox-button {
   background: linear-gradient(
@@ -1136,6 +1165,16 @@ main {
 
   background: rgba(255, 255, 255, 0.13) !important;
   backdrop-filter: blur(13px);
+}
+.upper-info-title h5 {
+  font-family: Cormorant;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.21em;
+  text-align: left;
+  text-transform: uppercase;
 }
 .information .little-search {
   height: 58px;
@@ -1877,6 +1916,9 @@ input[type="checkbox"].option-checkbox:checked + label::before {
   .message-writting-box {
     height: auto !important;
   }
+  #sell-section{
+    margin: 20px !important ;
+   }
 }
 /* #################### Community ########################### */
 .tabs-tem-container {
@@ -2089,6 +2131,12 @@ input[type="checkbox"].option-checkbox:checked + label::before {
   width: 100% !important;
   background: #9552d4 !important;
 }
+#public-profile{
+  background:url("images/2nd-smoke-bg.png") !important;
+  background-position: center !important;
+  background-repeat:no-repeat !important; 
+  background-size:cover !important;
+}
 
 .profile-heading {
   font-family: Cormorant;
@@ -2106,6 +2154,39 @@ input[type="checkbox"].option-checkbox:checked + label::before {
 
   border-radius: 16px;
 }
-.profiles-btn li a img{
-width:30px !important;
+.profiles-btn li a img {
+  width: 30px !important;
 }
+.profiles-btn {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.profiles-btn li {
+  flex-basis: 120px !important;
+ 
+  flex-shrink: 0 !important;
+}
+.profile-desc{
+  background: rgba(30, 30, 30, 0.49) !important;
+backdrop-filter: blur(26px) !important;
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 16px;
+color:#fff !important;
+}
+
+.border-gradient {
+  border: 10px solid !important;
+  border-image-slice: 1 !important;
+  border-width: 5px !important;
+
+}
+.border-gradient-purple {
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d) !important;
+  /* border-radius: 15px !important; */
+  
+}
+ 

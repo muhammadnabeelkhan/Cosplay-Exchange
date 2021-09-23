@@ -28,10 +28,11 @@
     <link rel="stylesheet" href="all.min.css" />
 
     <link rel="stylesheet" href="style.css" />
-    <title>Cosplay Exchange - Dashboard</title>
+    <title>Cosplay Exchange - Sell</title>
   </head>
+
   <body>
-    <!-- ##################### HEADER ########################## -->
+    <!-- ##################### Header starting ########################## -->
     <header class="main-header p-lg-0">
       <!-- ################## 1st section logo  start ################## -->
       <div class="row g-0 p-0">
@@ -53,8 +54,8 @@
           <div class="row g-0 align-items-center px-4">
             <div class="col-lg-3 pe-md-3 pt-4">
               <div class="gallery-info">
-                <h3>Dashboard</h3>
-                <small>Some text or maybe not.</small>
+                <h3>Sell / List</h3>
+                <small>Share a listing for 5 cosplay coins.</small>
               </div>
             </div>
             <!-- ################## 2nd section search form  start################## -->
@@ -134,8 +135,6 @@
         </div>
       </div>
     </header>
-    <!-- ##################### Header ending ########################## -->
-    <!-- ################## HAMBURGER MENU ################## -->
     <ul class="hamburger-menu m-0 nav-link list-unstyled">
       <li class="hamburger-upper">
         <img src="images/bx-menu.svg" alt="" />
@@ -143,7 +142,6 @@
     </ul>
 
     <main>
-      <!-- ################## SIDEBAR MENU ################## -->
       <div class="sidebar">
         <ul class="nav-links">
           <li class="active">
@@ -232,11 +230,11 @@
               </a>
             </div>
             <!-- <ul class="sub-menu">
-          <li><a class="link_name" href="#">Chat</a></li>
-          <li><a href="#">UI Face</a></li>
-          <li><a href="#">Pigments</a></li>
-          <li><a href="#">Box icons</a></li>
-        </ul> -->
+              <li><a class="link_name" href="#">Chat</a></li>
+              <li><a href="#">UI Face</a></li>
+              <li><a href="#">Pigments</a></li>
+              <li><a href="#">Box icons</a></li>
+            </ul> -->
           </li>
 
           <li>
@@ -268,158 +266,167 @@
 
         <!-- </div> -->
       </div>
-      <!-- ################## MAIN SECTION FOR PAGE ################## -->
 
-      <section class="information m-5 mt-0">
-        <div class="dashboard-bg">
-        <div class="dashboard">
-          <div class="row">
-            <!-- 1st row start-->
-            <div class="col-12">
-              <div class="dashboard-main-content">
-                <a href="#" class="d-block text-decoration-none">
-                  <p class="text-center m-0">
-                    Subscribe: <br />
-                    Current Status: Active <img src="images/clock.svg" alt="" />
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- 1st row end -->
-
-          <div class="row my-4">
-            <!-- 2nd row start-->
-            <div class="col-12">
-              <div class="dashboard-main-content">
-                <a href="#" class="d-block text-decoration-none">
-                  <p class="text-center m-0">
-                    Revenue Received<br />
-                    $100.00
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- 2nd row end -->
-
-          <div class="row">
-            <!-- row 3 start-->
-            <div class="col-md-6 mt-3">
-              <a href="#" class="btn btn-primary">My Listings</a>
-            </div>
-            <div class="col-md-6 mt-3">
-              <a href="#" class="btn btn-primary">My Purchases</a>
-            </div>
-          </div>
-          <!-- row 3 end-->
-        </div>
-        <div class="">
-          <div class="between-horizontal-line"></div>
-        </div>
-
-        <h2 class="text-center cdcd py-4 m-0">Coins</h2>
-        <div class="dashboard-smokey">
-          <div class="dashboard-information">
-            <div class="row">
-              <div class="col-sm-6 mt-4">
-                <a
-                  href=""
-                  class="btn btn-primary d-flex justify-content-center"
-                >
-                  <span>Total Coins:</span> <span class="ms-5">10</span></a
-                >
-              </div>
-              <div class="col-sm-6 mt-4">
-                <a href="" class="btn btn-primary d-flex justify-content-center"
-                  ><span>Locked Coins:</span> <span class="ms-5"> 10</span></a
-                >
-              </div>
-              <div class="col-12 mt-4">
-                <a href="" class="btn btn-primary d-flex justify-content-center"
-                  >Available Coins: 10
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="dashboard-information">
-            <h3 class="text-center cdcd pb-4">Cosplays</h3>
-            <div class="row pb-3">
-              <div class="col-md-6 mt-4">
-                <a
-                  href=""
-                  class="btn btn-primary d-flex justify-content-around"
-                >
-                  <span>Awaiting Admin Approval:</span>
-                  <span class="ms-5">10</span></a
-                >
-              </div>
-              <div class="col-md-6 mt-4">
-                <a href="" class="btn btn-primary d-flex justify-content-around"
-                  ><span class="ps-3">My Posts:</span>
-                  <span class="ms-5"> 10</span></a
-                >
+      <section
+        class="information home-section all-forms-content m-md-2"
+        id="sell-section"
+      >
+        <div class="container-fluid">
+          <div class="p-2">
+            <form>
+              <h3 class="text-center cdcd py-3">List an Item</h3>
+              <div class="row g-0 transparency-form-input border-radius-15">
+                <div class="col-6">
+                  <a
+                    type="button"
+                    class="btn btn-secondary active"
+                    id="loginSlider"
+                  >
+                    Quick List
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a
+                    type="button"
+                    class="btn btn-secondary active-gradient"
+                    href="sell.html"
+                    id="registerSlider"
+                  >
+                    Complete List
+                  </a>
+                </div>
               </div>
 
-              <div class="col-md-6 mt-4">
-                <a
-                  href=""
-                  class="btn btn-primary d-flex justify-content-around"
+              <section>
+                <div class="download-parent mt-4">
+                  <span class="py-3">Add up to 10 Photos</span>
+                  <a
+                    href=""
+                    class="
+                      btn btn-primary
+                      border-radius-10
+                      transparency-form-input
+                    "
+                  >
+                    <input type="file" multiple />
+                    <div class="upload-info">
+                      <img
+                        class="upload-image"
+                        src="images/UploadSimple.svg"
+                        alt="upload"
+                      />
+                      Browse
+                    </div>
+                  </a>
+
+                  <span class="py-3">No fields selected</span>
+                </div>
+              </section>
+            </form>
+            
+            <section class="lastForms">
+              <div class="mb-3">
+                <label for="formGroupExampleInput3">
+                  <span class="selectbox-upper-label"
+                    >TITLE</span
+                  ></label
                 >
-                  <span>Offer Received:</span> <span class="ms-5">10</span></a
-                >
+                <input
+                  type="text"
+                  class="form-control transparency-form-input p-3"
+                  id="formGroupExampleInput3"
+                  placeholder="What are you Spelling?."
+                />
               </div>
-              <div class="col-md-6 mt-4">
-                <a href="" class="btn btn-primary d-flex justify-content-around"
-                  ><span>Sold:</span> <span class="ms-5"> 10</span></a
-                >
+              <div class="mb-3">
+                <label for="formGroupExampleInput4" class="form-label">
+                  <span class="selectbox-upper-label">
+                    LISTING PRICE INCLUDING SHIPPING</span>
+                  </label>
+                
+                <input
+                  type="text"
+                  class="form-control transparency-form-input p-3"
+                  id="formGroupExampleInput4"
+                  placeholder="Enter Amount here.. "
+                />
               </div>
-              <div class="col-md-6 mt-4">
-                <a
-                  href=""
+              <div class="mb-3">
+                <label for="formGroupExampleInput5" class="form-label">
+                  <span class="selectbox-upper-label">EMAIL (Where Requests and Offers for your Item will be sent)</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control transparency-form-input p-3"
+                  id="formGroupExampleInput5"
+                  placeholder="Some text here"
+                />
+              </div>
+            </section>
+            <div class="last-groups-of-button mt-4">
+              <div class="last-payments-button d-flex align-items-center cdcd">
+                <h3>I will accept:</h3>
+                <span class="ms-2">(Choose one or both)</span>
+              </div>
+
+              <a href="#" class="btn btn-primary mb-3 me-3">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input option-checkbox"
+                    id="payment"
+                    name="example1 customCheck"
+                  />
+                  <label
+                    class="custom-control-label option-label"
+                    for="payment"
+                  >
+                    &nbsp; Electronic USD Payment $</label
+                  >
+                </div>
+              </a>
+
+              <a href="#" class="btn btn-primary most-last-coin-button mb-3">
+                <div
                   class="
-                    btn btn-primary
+                    custom-control custom-checkbox
                     d-flex
-                    justify-content-around
-                    dark-purple
+                    align-items-center
                   "
                 >
-                  <span>Awaiting Your Shipment:</span>
-                  <span class="ms-5">10</span></a
-                >
-              </div>
-              <div class="col-md-6 mt-4">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input option-checkbox"
+                    id="coin-button"
+                    name="example1 customCheck"
+                  />
+                  <label
+                    class="custom-control-label option-label"
+                    for="coin-button"
+                  >
+                    &nbsp; Cosplay Coins</label
+                  >
+                  <img src="images/cosplay coin.png" class="img-fluid" alt="" />
+                </div>
+              </a>
+              <div class="the-end-button text-center my-5">
                 <a
-                  href=""
+                  href="#"
                   class="
                     btn btn-primary
-                    w-100
-                    d-flex
-                    justify-content-around
-                    dark-purple
+                    py-3
+                    border-gradient border-gradient-purple
                   "
-                  ><span>Shipped:</span> <span class="ms-5"> 10</span></a
+                  id="submit-button"
+                  >submit</a
                 >
-              </div>
-
-              <div class="col-12 mt-4">
-                <a
-                  href=""
-                  class="
-                    btn btn-primary
-                    d-flex
-                    justify-content-around
-                    dark-purple
-                  "
-                  ><span>Received and Accepted:</span>
-                  <span class="ms-5"> 10</span>
-                </a>
               </div>
             </div>
+
+
+
           </div>
         </div>
-      </div>
       </section>
     </main>
 

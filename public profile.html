@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stsylesheet"
-    />D
+      rel="stylesheet"
+    />
     <!-- Boxicons CSS -->
     <link
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="all.min.css" />
 
     <link rel="stylesheet" href="style.css" />
-    <title>Sell</title>
+    <title>Subscribe</title>
   </head>
   <body>
     <!-- ##################### Header starting ########################## -->
@@ -52,8 +52,8 @@
           <div class="row g-0 align-items-center ps-lg-4">
             <div class="col-lg-3 pe-md-3 pt-lg-0 pt-4">
               <div class="gallery-info">
-                <h3>My Profile</h3>
-                <small>Some text or maybe not</small>
+                <h3>Gallery</h3>
+                <small>Share a listing for 5 cosplay</small>
               </div>
             </div>
             <!-- ################## 2nd section search form  start################## -->
@@ -104,14 +104,14 @@
       </div>
     </header>
 
-    <ul class="hamburger-menu m-0 nav-link list-unstyled">
-      <li class="hamburger-upper">
-        <img src="images/bx-menu.svg" alt="" />
-      </li>
-    </ul>
+    <div class="hamburger-menu">
+      <div class="hamburger-upper">
+        <img src="images/bx-menu.svg" class="img-fluid m-auto" alt="" />
+      </div>
+    </div>
 
-    <main class="profile-background">
-      <div class="sidebar">
+    <main class="d-flex justify-content-between">
+      <div class="sidebar close">
         <ul class="nav-links">
           <li>
             <a href="#">
@@ -160,7 +160,6 @@
               <a href="#">
                 <img src="images/my wallet.svg" class="zoom" alt="My wallet" />
                 <span class="link_name">My wallet</span>
-                <i class="bx bxs-chevron-down arrow"></i>
               </a>
             </div>
             <ul class="sub-menu">
@@ -233,61 +232,37 @@
             </a>
           </div>
         </ul>
-
-        <!-- </div> -->
+l
       </div>
 
-      <section class="profile-info">
-        <div class="profile-content">
-          <div class="profile-image mb-1 text-center mt-5 pt-5">
-            <img src="images/spider.jpeg" class="img-fluid w-100" alt="" />
+      <section class="user-info subscription-with-user-info">
+        <div id="public-profile">          <div class="carousel-and-prof">
+              <div class="row justify-content-center p-3">
+                  <div class="col-sm-5 m-sm-0">
+                      <div class="profile-content">
+                        <div class="profile-desc p-5">
+                          <h3 class="profile-heading text-center">ImNabeelkhan</h3>
+                          <ul class="list-unstyled">
+                              <li><p>Next Con:</p></li>
+                              <li><p>Cosplans</p></li>
+                              <li><p>Locations</p></li>
+                              <li class="d-flex"><p class="me-2">About:</p>  <span class="ms-2">Full Stack Developer</span></li>
+                              <li><p>WI Based Cosplayer</p></li>
+                              <li><p>Link Tree Url</p></li>
 
-            <p class="profile-image-description">I am __________</p>
+                          </ul>
+                          <ul class="list-unstyled d-flex profiles-btn flex-wrap">
+                          <li class="my-2 mx-1"><a href="#" class="btn btn-primary px-2  w-100 d-block"><img src="images/shareicon.png" alt="Envelop"> Chat</a>  </li>
+                          <li class="my-2 mx-1"><a href="#" class="btn btn-primary px-2 w-100 d-block"><img src="images/shareicon.png" alt="Share"> Share </a>  </li>
+                          <li class="my-2 mx-1"><a href="#" class="btn btn-primary px-2 w-100 d-block"> Edit Profile </a>  </li>
+                          </ul>
+
+                      </div>
+                  </div>
+                  <div class="col-12"></div>
+              </div>
           </div>
-          <div class="remarks text-center">
-            <ul class="remarks list-unstyled d-flex justify-content-center">
-              <li>
-                <a href="#">
-                  <img src="images/single-stars.svg" class="img-fluid" alt=""
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img src="images/single-stars.svg" class="img-fluid" alt=""
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img src="images/single-stars.svg" class="img-fluid" alt=""
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img src="images/single-stars.svg" class="img-fluid" alt=""
-                /></a>
-              </li>
-            </ul>
-            <a href="#" class="btn btn-primary px-3"> Edit my profile </a>
-          </div>
-          <div class="switch-button mt-2 pb-5 mb-3">
-            <!-- Rounded switch -->
-            <div
-              class="
-                status-info
-                d-flex
-                align-items-center
-                justify-content-center
-                mt-3
-              "
-            >
-              <label class="switch">
-                <input type="checkbox" />
-                <span class="slider round"></span>
-              </label>
-              <span class="status ps-2">Online status</span>
-            </div>
-          </div>
-        </div>
+        
       </section>
     </main>
 

@@ -9,8 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
+      rel="stsylesheet"
     />
+    
     <!-- Boxicons CSS -->
     <link
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
@@ -28,7 +29,7 @@
     <link rel="stylesheet" href="all.min.css" />
 
     <link rel="stylesheet" href="style.css" />
-    <title>Cosplay Exchange - Dashboard</title>
+    <title>Cosplay Exchange - View profile</title>
   </head>
   <body>
     <!-- ##################### HEADER ########################## -->
@@ -53,7 +54,7 @@
           <div class="row g-0 align-items-center px-4">
             <div class="col-lg-3 pe-md-3 pt-4">
               <div class="gallery-info">
-                <h3>Dashboard</h3>
+                <h3>My Profile</h3>
                 <small>Some text or maybe not.</small>
               </div>
             </div>
@@ -135,6 +136,7 @@
       </div>
     </header>
     <!-- ##################### Header ending ########################## -->
+
     <!-- ################## HAMBURGER MENU ################## -->
     <ul class="hamburger-menu m-0 nav-link list-unstyled">
       <li class="hamburger-upper">
@@ -232,11 +234,11 @@
               </a>
             </div>
             <!-- <ul class="sub-menu">
-          <li><a class="link_name" href="#">Chat</a></li>
-          <li><a href="#">UI Face</a></li>
-          <li><a href="#">Pigments</a></li>
-          <li><a href="#">Box icons</a></li>
-        </ul> -->
+              <li><a class="link_name" href="#">Chat</a></li>
+              <li><a href="#">UI Face</a></li>
+              <li><a href="#">Pigments</a></li>
+              <li><a href="#">Box icons</a></li>
+            </ul> -->
           </li>
 
           <li>
@@ -270,156 +272,58 @@
       </div>
       <!-- ################## MAIN SECTION FOR PAGE ################## -->
 
-      <section class="information m-5 mt-0">
-        <div class="dashboard-bg">
-        <div class="dashboard">
-          <div class="row">
-            <!-- 1st row start-->
-            <div class="col-12">
-              <div class="dashboard-main-content">
-                <a href="#" class="d-block text-decoration-none">
-                  <p class="text-center m-0">
-                    Subscribe: <br />
-                    Current Status: Active <img src="images/clock.svg" alt="" />
-                  </p>
-                </a>
-              </div>
-            </div>
+      <section class="information home-section all-forms-content mt-0 mx-5"
+      id="sell-section">
+        <div class="profile-content bg-none">
+          <div class="profile-image mb-1 text-center mt-5 pt-5">
+            <img src="images/spider.jpeg" class="img-fluid w-100" alt="" />
+
+            <p class="profile-image-description">I am __________</p>
           </div>
-          <!-- 1st row end -->
-
-          <div class="row my-4">
-            <!-- 2nd row start-->
-            <div class="col-12">
-              <div class="dashboard-main-content">
-                <a href="#" class="d-block text-decoration-none">
-                  <p class="text-center m-0">
-                    Revenue Received<br />
-                    $100.00
-                  </p>
-                </a>
-              </div>
-            </div>
+          <div class="remarks text-center">
+            <ul class="remarks list-unstyled d-flex justify-content-center">
+              <li>
+                <a href="#">
+                  <img src="images/single-stars.svg" class="img-fluid" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/single-stars.svg" class="img-fluid" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/single-stars.svg" class="img-fluid" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/single-stars.svg" class="img-fluid" alt=""
+                /></a>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-primary px-3"> Edit my profile </a>
           </div>
-          <!-- 2nd row end -->
-
-          <div class="row">
-            <!-- row 3 start-->
-            <div class="col-md-6 mt-3">
-              <a href="#" class="btn btn-primary">My Listings</a>
-            </div>
-            <div class="col-md-6 mt-3">
-              <a href="#" class="btn btn-primary">My Purchases</a>
-            </div>
-          </div>
-          <!-- row 3 end-->
-        </div>
-        <div class="">
-          <div class="between-horizontal-line"></div>
-        </div>
-
-        <h2 class="text-center cdcd py-4 m-0">Coins</h2>
-        <div class="dashboard-smokey">
-          <div class="dashboard-information">
-            <div class="row">
-              <div class="col-sm-6 mt-4">
-                <a
-                  href=""
-                  class="btn btn-primary d-flex justify-content-center"
-                >
-                  <span>Total Coins:</span> <span class="ms-5">10</span></a
-                >
-              </div>
-              <div class="col-sm-6 mt-4">
-                <a href="" class="btn btn-primary d-flex justify-content-center"
-                  ><span>Locked Coins:</span> <span class="ms-5"> 10</span></a
-                >
-              </div>
-              <div class="col-12 mt-4">
-                <a href="" class="btn btn-primary d-flex justify-content-center"
-                  >Available Coins: 10
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="dashboard-information">
-            <h3 class="text-center cdcd pb-4">Cosplays</h3>
-            <div class="row pb-3">
-              <div class="col-md-6 mt-4">
-                <a
-                  href=""
-                  class="btn btn-primary d-flex justify-content-around"
-                >
-                  <span>Awaiting Admin Approval:</span>
-                  <span class="ms-5">10</span></a
-                >
-              </div>
-              <div class="col-md-6 mt-4">
-                <a href="" class="btn btn-primary d-flex justify-content-around"
-                  ><span class="ps-3">My Posts:</span>
-                  <span class="ms-5"> 10</span></a
-                >
-              </div>
-
-              <div class="col-md-6 mt-4">
-                <a
-                  href=""
-                  class="btn btn-primary d-flex justify-content-around"
-                >
-                  <span>Offer Received:</span> <span class="ms-5">10</span></a
-                >
-              </div>
-              <div class="col-md-6 mt-4">
-                <a href="" class="btn btn-primary d-flex justify-content-around"
-                  ><span>Sold:</span> <span class="ms-5"> 10</span></a
-                >
-              </div>
-              <div class="col-md-6 mt-4">
-                <a
-                  href=""
-                  class="
-                    btn btn-primary
-                    d-flex
-                    justify-content-around
-                    dark-purple
-                  "
-                >
-                  <span>Awaiting Your Shipment:</span>
-                  <span class="ms-5">10</span></a
-                >
-              </div>
-              <div class="col-md-6 mt-4">
-                <a
-                  href=""
-                  class="
-                    btn btn-primary
-                    w-100
-                    d-flex
-                    justify-content-around
-                    dark-purple
-                  "
-                  ><span>Shipped:</span> <span class="ms-5"> 10</span></a
-                >
-              </div>
-
-              <div class="col-12 mt-4">
-                <a
-                  href=""
-                  class="
-                    btn btn-primary
-                    d-flex
-                    justify-content-around
-                    dark-purple
-                  "
-                  ><span>Received and Accepted:</span>
-                  <span class="ms-5"> 10</span>
-                </a>
-              </div>
+          <div class="switch-button mt-2 pb-5 mb-3">
+            <!-- Rounded switch -->
+            <div
+              class="
+                status-info
+                d-flex
+                align-items-center
+                justify-content-center
+                mt-3
+              "
+            >
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+              <span class="status ps-2">Online status</span>
             </div>
           </div>
         </div>
-      </div>
       </section>
     </main>
 

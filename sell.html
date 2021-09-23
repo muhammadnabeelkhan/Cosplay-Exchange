@@ -32,7 +32,6 @@
   </head>
 
   <body>
-    
     <!-- ##################### HEADER ########################## -->
     <header class="main-header p-lg-0">
       <!-- ################## 1st section logo  start ################## -->
@@ -138,7 +137,6 @@
     </header>
     <!-- ##################### Header ending ########################## -->
 
-
     <!-- ################## HAMBURGER MENU ################## -->
     <ul class="hamburger-menu m-0 nav-link list-unstyled">
       <li class="hamburger-upper">
@@ -147,7 +145,6 @@
     </ul>
 
     <main>
-
       <!-- ################## SIDEBAR MENU ################## -->
       <div class="sidebar">
         <ul class="nav-links">
@@ -179,7 +176,7 @@
           </li>
 
           <li>
-            <a href="my profile.html" title="my profile">
+            <a href="view-profile.html" title="my profile">
               <img src="images/contact.svg" class="zoom" alt="My profile" />
               <span class="link_name">My profile</span>
             </a>
@@ -281,33 +278,40 @@
         <div class="container-fluid">
           <div class="p-2">
             <h3 class="text-center cdcd py-3">List an Item</h3>
-            <div class="row g-0 transparency-form-input border-radius-15 nav nav-tabs" id="myTab" role="tablist"">
-              <div class="col-6 nav-item" role="presentation">
+
+            <ul
+              class="
+                row
+                g-0
+                transparency-form-input
+                border-radius-15
+                nav nav-tabs
+              "
+              id="myTab"
+              role="tablist"
+            >
+              <li class="col-6 nav-item" role="presentation">
                 <a
-                  type="button"
-                  class="btn btn-secondary active nav-link tab-pane fade show active "
                   id="loginSlider"
-                    role="tabpanel" aria-labelledby="home-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#home"
-                    type="button"
-                    role="tab"
-                    aria-controls="home"
-                    aria-selected="false"
-                  
-                 
+                  type="button"
+                  class="btn btn-secondary text-capitalize nav-link"
+                  data-bs-toggle="tab"
+                  data-bs-target="#quicklist"
+                  type="button"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="false"
                 >
                   Quick List
                 </a>
-              </div>
-              <div class="col-6 nav-item" role="presentation">
+              </li>
+              <li class="col-6 nav-item" role="presentation">
                 <a
-                  type="button"
-                  class="btn btn-secondary active-gradient nav-link"
-                  href="sell.html"
                   id="registerSlider"
+                  type="button"
+                  class="btn btn-secondary nav-link text-capitalize active"
                   data-bs-toggle="tab"
-                  data-bs-target="#profile"
+                  data-bs-target="#completelist"
                   type="button"
                   role="tab"
                   aria-controls="profile"
@@ -315,8 +319,8 @@
                 >
                   Complete List
                 </a>
-              </div>
-            </div>
+              </li>
+            </ul>
 
             <section>
               <div class="download-parent mt-4">
@@ -347,16 +351,16 @@
             <div class="tab-content" id="myTabContent">
               <div
                 class="tab-pane fade show active"
-                id="home"
+                id="completelist"
                 role="tabpanel"
                 aria-labelledby="home-tab"
               >
                 <section class="textarea-and-search my-5">
-                  <div class="mb-3">
+                  <div class="mb-5">
                     <div
                       class="upper-info-title d-flex justify-content-between"
                     >
-                      <h5>TITLE</h5>
+                      <h5 class="tag-optional">TITLE</h5>
                       <span>0/40</span>
                     </div>
                     <label for="formGroupExampleInput1"></label>
@@ -372,7 +376,7 @@
                     <div
                       class="upper-info-title d-flex justify-content-between"
                     >
-                      <h5>Description</h5>
+                      <h5 class="tag-optional">Description</h5>
                       <span>0 / 10000</span>
                     </div>
                     <div class="">
@@ -390,10 +394,10 @@
 
                 <section class="findsAndSelect">
                   <div class="col-12">
-                    <h5 class="tag-optional"># TAGS (Optional)</h5>
+                    <span class="tag-optional">#TAGS </span> <span class="cdcd">(Optional)</span>
                   </div>
                   <div class="row">
-                    <div class="col-md-4 col-sm-6 mb-3">
+                    <div class="col-md-4 col-sm-6 mb-5">
                       <div class="smallSearchParent parentOfSearch boxshadow">
                         <input
                           class="little-search m-lg-0 transparency-form-input"
@@ -404,7 +408,7 @@
                       </div>
                     </div>
 
-                    <div class="col-md-4 col-sm-6 mb-3">
+                    <div class="col-md-4 col-sm-6 mb-5">
                       <div class="smallSearchParent parentOfSearch boxshadow">
                         <input
                           class="little-search m-lg-0 transparency-form-input"
@@ -414,7 +418,7 @@
                         />
                       </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 mb-3">
+                    <div class="col-md-4 col-sm-6 mb-5">
                       <div class="smallSearchParent parentOfSearch boxshadow">
                         <input
                           class="little-search m-lg-0 transparency-form-input"
@@ -432,15 +436,13 @@
                   <div class="row">
                     <div class="col-md-4 col-sm-6 my-3">
                       <label for="Category">
-                        <span class="selectbox-upper-label">
-                          Category</span
-                        ></label
+                        <span class="tag-optional"> CATEGORY</span></label
                       >
                       <select
                         class="transparency-form-input m-auto"
                         id="Category"
                       >
-                        <option data-display="Please select a Cateory" class="">
+                        <option data-display="Please select a Category" class="">
                           Nothing
                         </option>
                         <option value="1">Some option</option>
@@ -451,8 +453,10 @@
                     </div>
                     <div class="col-md-4 col-sm-6 my-3">
                       <label for="style">
-                        <span class="selectbox-upper-label">
-                          Style
+                        <span
+                          class="selectbox-upper-labeltag-optional tag-optional"
+                        >
+                          STYLE
                         </span></label
                       >
                       <select class="transparency-form-input m-auto" id="style">
@@ -467,7 +471,9 @@
                     </div>
                     <div class="col-md-4 col-sm-6 my-3">
                       <label for="size">
-                        <span class="selectbox-upper-label"> Size</span></label
+                        <span class="selectbox-upper-label tag-optional">
+                          SIZE</span
+                        ></label
                       >
                       <select class="transparency-form-input" id="size">
                         <option data-display="Please select a Size">
@@ -482,8 +488,10 @@
                   </div>
                 </section>
                 <section class="lastForms">
-                  <div class="mb-5">
-                    <label for="formGroupExampleInput5" class="form-label"
+                  <div class="my-5">
+                    <label
+                      for="formGroupExampleInput5"
+                      class="form-label tag-optional"
                       >MEASUREMENTS</label
                     >
                     <input
@@ -495,7 +503,7 @@
                   </div>
                   <div class="mb-5">
                     <label for="formGroupExampleInput" class="form-label">
-                      <span class=""> MATERIAL</span></label
+                      <span class="tag-optional"> MATERIAL</span></label
                     >
                     <input
                       type="text"
@@ -506,7 +514,8 @@
                   </div>
                 </section>
 
-                <span class="ps-3 form-label cdcd">Condition (Select one)</span>
+                <span class=" form-label cdcd tag-optional  mt-5">
+                  CONDITION</span> <span class="cdcd"> (Select One)</span>
                 <ul class="small-boxes-container list-unstyled">
                   <input
                     type="radio"
@@ -586,7 +595,9 @@
                     <!-- small box end -->
                   </li>
                 </ul>
-                <h2 class="mt-5 mb-3 cdcd">Extra Information</h2>
+                <h2 class=" tag-optional font-2em">
+                  Extra Information
+                </h2>
                 <ul class="list-unstyled some-checkbox-information-btn m-0">
                   <li>
                     <a
@@ -648,7 +659,7 @@
                 </ul>
                 <div class="my-5">
                   <label for="formGroupExampleInput2">
-                    <span class="selectbox-upper-label">
+                    <span class="selectbox-upper-label tag-optional">
                       ESTIMATED SHIPPING COST</span
                     ></label
                   >
@@ -668,13 +679,13 @@
                 </div>
 
                 <section class="lastForms">
-                  <h2 class="mb-4">Pricing</h2>
-                  <div class="mb-3">
+                  <h2 class="mb-4 tag-optional font-2em">Pricing</h2>
+                  <div class="mb-5">
                     <label for="formGroupExampleInput3">
-                      <span class="selectbox-upper-label"
-                        >Sale Price (Round to the nearest dollar do not use
-                        cents)</span
-                      ></label
+                      <span class="selectbox-upper-label tag-optional"
+                        >SALE PRICE </span
+                        > (Round To The Nearest Dollar Do Not Use
+                        Cents)</label
                     >
                     <input
                       type="text"
@@ -683,9 +694,9 @@
                       placeholder="Enter Price( eg. 60 ) here.."
                     />
                   </div>
-                  <div class="mb-3">
+                  <div class="mb-5">
                     <label for="formGroupExampleInput4" class="form-label">
-                      <span class="selectbox-upper-label"
+                      <span class="selectbox-upper-label tag-optional"
                         >Shipping Reimbursement</span
                       ></label
                     >
@@ -696,9 +707,9 @@
                       placeholder="Some text here"
                     />
                   </div>
-                  <div class="mb-3">
+                  <div class="mb-5">
                     <label for="formGroupExampleInput5" class="form-label">
-                      <span class="selectbox-upper-label"
+                      <span class="selectbox-upper-label tag-optional"
                         >LISTING FOR</span
                       ></label
                     >
@@ -714,7 +725,7 @@
                   <div
                     class="last-payments-button d-flex align-items-center cdcd"
                   >
-                    <h3>I will accept:</h3>
+                    <h3 class="tag-optional font-2em font-0-10-em">I will accept:</h3>
                     <span class="ms-2">(Choose one or both)</span>
                   </div>
 
@@ -782,16 +793,14 @@
 
               <div
                 class="tab-pane fade"
-                id="profile"
+                id="quicklist"
                 role="tabpanel"
                 aria-labelledby="profile-tab"
                 class="tab-pane fade"
-                id="profile"
-                role="tabpanel"
                 aria-labelledby="profile-tab"
               >
                 <section class="lastForms">
-                  <div class="mb-3">
+                  <div class="my-5">
                     <label for="formGroupExampleInput3">
                       <span class="selectbox-upper-label">TITLE</span></label
                     >
@@ -802,7 +811,7 @@
                       placeholder="What are you Spelling?."
                     />
                   </div>
-                  <div class="mb-3">
+                  <div class="mb-5">
                     <label for="formGroupExampleInput4" class="form-label">
                       <span class="selectbox-upper-label">
                         LISTING PRICE INCLUDING SHIPPING</span
@@ -816,7 +825,7 @@
                       placeholder="Enter Amount here.. "
                     />
                   </div>
-                  <div class="mb-3">
+                  <div class="mb-5">
                     <label for="formGroupExampleInput5" class="form-label">
                       <span class="selectbox-upper-label"
                         >EMAIL (Where Requests and Offers for your Item will be
@@ -844,12 +853,12 @@
                       <input
                         type="checkbox"
                         class="custom-control-input option-checkbox"
-                        id="payment"
+                        id="Electronic"
                         name="example1 customCheck"
                       />
                       <label
                         class="custom-control-label option-label"
-                        for="payment"
+                        for="Electronic"
                       >
                         &nbsp; Electronic USD Payment $</label
                       >
@@ -870,12 +879,12 @@
                       <input
                         type="checkbox"
                         class="custom-control-input option-checkbox"
-                        id="coin-button"
+                        id="Cosplay-coin"
                         name="example1 customCheck"
                       />
                       <label
                         class="custom-control-label option-label"
-                        for="coin-button"
+                        for="Cosplay-coin"
                       >
                         &nbsp; Cosplay Coins</label
                       >
@@ -905,7 +914,6 @@
           </div>
         </div>
       </section>
-
     </main>
 
     <script

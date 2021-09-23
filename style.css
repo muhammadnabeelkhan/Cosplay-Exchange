@@ -27,6 +27,15 @@ img[src="images/shop.svg"] {
   fill: #e01066 !important;
   color: #e01066 !important;
 }
+.bg-none{
+  background: none!important;
+}
+.font-2em{
+  font-size: 2em !important;
+}
+.font-0-10-em{
+  letter-spacing: 5px!important;
+}
 .btn-primary:focus {
   outline: none;
   box-shadow: none;
@@ -313,6 +322,7 @@ header {
 }
 
 .brand-image img {
+  min-width: 268px;
   width: 268px;
   height: auto;
   background-color: transparent;
@@ -610,9 +620,10 @@ main {
     height: 100% !important;
     max-width: 268px !important;
   }
-  .user-info {
-    width: calc(100% + 72px) !important;
+    .user-info {
+    width: 100% !important;
   }
+
   .profile-info {
     height: 200vh !important;
     width: calc(100% + 72px) !important;
@@ -743,7 +754,7 @@ main {
   background-size: cover !important;
   position: relative;
   top: 0%;
-  width: calc(100% - 282px);
+  width: calc(100% - 360px);
 }
 .information .parentOfSearch input {
   background: rgba(255, 255, 255, 0.13) !important;
@@ -771,15 +782,14 @@ main {
   line-height: 29px;
   letter-spacing: 0em;
 }
-.active-gradient {
+#loginSlider.active,
+#registerSlider.active {
   background: linear-gradient(
     91.46deg,
     rgba(104, 13, 222, 0.4) 0%,
     rgba(255, 90, 255, 0.4) 100%
   ) !important;
   backdrop-filter: blur(4px);
-  /* Note: backdrop-filter has minimal browser support */
-
   border-radius: 15px;
 }
 
@@ -954,7 +964,7 @@ main {
 .user-info {
   overflow-x: hidden;
   height: auto !important;
-  width: calc(100% - 72px);
+  width: calc(100% - 268px);
   /* margin-left: 3rem !important; */
 }
 .user-info .form-control {
@@ -1080,6 +1090,15 @@ main {
   border-width: 2px;
   border-color: #efa621;
 }
+.small-box.active .btn.btn-primary{
+  background: linear-gradient(
+    98.54deg,
+    rgba(122, 10, 249, 0.3) 0.22%,
+    rgba(247, 77, 255, 0.3) 99.8%
+  );
+  backdrop-filter: blur(14px);
+  border-radius: 7.8125px;
+}
 .active-smallbox-button {
   background: linear-gradient(
     98.54deg,
@@ -1109,9 +1128,9 @@ main {
   border-radius: 15px;
   padding: 0.6rem;
   color: var(--CDCD);
-  text-align: center;
+  text-align: left;
   width: 170px !important;
-  height: 157px;
+  height: 170px;
 }
 .small-boxes-container li {
   color: var(--CDCD);
@@ -1143,7 +1162,9 @@ main {
 }
 .tag-optional {
   letter-spacing: 0.21em;
-  color: var(--CDCD);
+  color: var(--CDCD) !important;
+  font-weight: bold !important;
+  font-size: 1.25rem;
 }
 .upper-info-title {
   margin-bottom: -1.9rem;
@@ -1166,15 +1187,15 @@ main {
   background: rgba(255, 255, 255, 0.13) !important;
   backdrop-filter: blur(13px);
 }
-.upper-info-title h5 {
+.upper-info-title {
   font-family: Cormorant;
-  font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: 0.21em;
   text-align: left;
   text-transform: uppercase;
+  color: var(--CDCD) !important ;
 }
 .information .little-search {
   height: 58px;
@@ -1425,6 +1446,10 @@ input[type="checkbox"].option-checkbox:checked + label::before {
   padding: 23px 50px;
   border: 1px solid var(--golden);
 }
+.wallet-input{
+  min-width: 270px;
+  width: 40% !important;
+}
 .wallet-coin-description p {
   font-family: Cormorant;
   font-size: 24px;
@@ -1437,17 +1462,23 @@ input[type="checkbox"].option-checkbox:checked + label::before {
 }
 .wallet-text {
   color: #ffffff;
+  font-family: Cormorant;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 20px;
 }
 .my-wallet-items .btn-primary {
   width: 178px;
   border: 1px solid var(--golden);
+  border-radius: 7.8125px;
 }
 .my-wallet-items .btn-primary:focus {
   box-shadow: none;
   outline: none;
 }
 .my-wallet-items .btn-primary img {
-  height: 38px !important;
+  height: 28px !important;
   width: 40px !important;
 }
 .my-wallet-items .btn-primary span {
@@ -1457,22 +1488,32 @@ input[type="checkbox"].option-checkbox:checked + label::before {
   font-size: 18px;
   line-height: 22px;
 }
+.wallet-last-text{
+  font-family: Cormorant;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+}
+.cosplay-code{
+  border-radius: 15px !important;
+}
 /*##########################Dashboard ###################*/
+.dashboard-bg{
+  background: url("images/2nd-smoke.jpg");
+  background-position:center;
+}
+
 .color-05040 {
   background-color: var(--color-05040);
 }
 
 .dashboard {
-  background: var(--color-05040);
+background: url("imagees/2nd-image.jpg") !important;
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
 }
-.dashboard-smokey {
-  background: url("images/2nd-smoke-bg.png") !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  background-position: 60% !important;
-}
+
 .active-dot {
   width: 10px;
   height: 5px;
@@ -1505,14 +1546,13 @@ input[type="checkbox"].option-checkbox:checked + label::before {
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 17px;
   /* Note: backdrop-filter has minimal browser support */
-  width: 100% !important;
+  width: 90% !important;
   margin: auto;
   border-radius: 17px;
 }
 .dashboard .btn-primary {
   width: 100%;
   padding: 14px !important;
-  background-color: black;
   border: 1px solid var(--golden);
   font-family: Cormorant;
   font-size: 16px;
@@ -1521,6 +1561,7 @@ input[type="checkbox"].option-checkbox:checked + label::before {
   line-height: 20px;
   letter-spacing: 0.21em;
   border-radius: 15px;
+  background:inherit; 
 }
 .dashboard-information {
   padding: 75px;
@@ -1954,16 +1995,22 @@ input[type="checkbox"].option-checkbox:checked + label::before {
 }
 .community-drpdown-tabs .nav-link {
   outline: none !important;
-  border-color: #ff409a !important ;
+  border: 0 !important;
 }
 .community-drpdown-tabs .nav-link:active {
-  border-color: #ff409a !important ;
+  border-color: none !important;
+  border: 0 !important;
 }
-.community-drpdown-tabs .nav-link:focus {
-  border-color: #ff409a !important ;
+.community-drpdown-tabs .nav-link:focus,
+.community-drpdown-tabs .nav-link:active,
+.community-drpdown-tabs .nav-link  {
+border-color: none !important;
+border: 0 !important;
 }
-.community-drpdown-tabs .nav-link:hover {
-  border-color: #ff409a !important ;
+
+#dynamic-tab-changer ~ .dropdown-menu{
+  width: 85%;
+  z-index: 3;
 }
 #nav-tab {
   background: #1a1939;
@@ -2188,5 +2235,25 @@ color:#fff !important;
   border-image-source: linear-gradient(to left, #743ad5, #d53a9d) !important;
   /* border-radius: 15px !important; */
   
+}
+.radio-1st{webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 15px;
+    margin-bottom: -5px;
+    height: 15px;
+
+    background-color: transparent;
+    transition: .2s all ease-in-out;
+    background: rgba(205, 205, 205, 0.5);
+    border-radius: 7px;
+    font-size: 0.8rem;
+    margin-r
+}
+.radio-1st:checked{
+  background: linear-gradient( 
+    180deg, rgba(196, 56, 239, 0.66) 0%, rgba(255, 64, 154, 0.66) 100% );
 }
  

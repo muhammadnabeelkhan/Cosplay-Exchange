@@ -28,18 +28,19 @@
     <link rel="stylesheet" href="all.min.css" />
 
     <link rel="stylesheet" href="style.css" />
-    <title>Community</title>
+    <title>Cosplay Exchange - Community</title>
   </head>
 
   <body>
-    <!-- ##################### Header starting ########################## -->
-
-    <header class="main-header p-3 p-lg-0">
+    <!-- ##################### HEADER ########################## -->
+    <header class="main-header p-lg-0">
       <!-- ################## 1st section logo  start ################## -->
-      <div class="row g-0 align-items-center justify-content-center">
+      <div class="row g-0 p-0">
         <div class="col-lg-3">
-          <div class="header-left-content">
-            <div class="brand-image m-lg-0 m-auto">
+          <div class="header-left-content h-100">
+            <div
+              class="brand-image h-100 dynamic-background-changer m-lg-0 m-auto"
+            >
               <img
                 src="images/ce logo.png"
                 class="img-fluid m-lg-0 m-auto"
@@ -50,15 +51,15 @@
         </div>
         <!-- ################## 1st section logo  end ################## -->
         <div class="col-lg-9">
-          <div class="row g-0 align-items-center ps-lg-4">
-            <div class="col-lg-3 pe-md-3 pt-lg-0 pt-4">
+          <div class="row g-0 align-items-center px-4">
+            <div class="col-lg-3 pe-md-3 pt-4">
               <div class="gallery-info">
-                <h3>Gallery</h3>
-                <small>Share a listing for 5 cosplay</small>
+                <h3>Community</h3>
+                <small>Share a listing for 5 cosplay coins.</small>
               </div>
             </div>
             <!-- ################## 2nd section search form  start################## -->
-            <div class="col-lg-5 text-center pt-lg-0 pt-4">
+            <div class="col-xl-5 col-lg-6 text-center pt-lg-0 pt-4">
               <div class="input-group parentOfSearch boxshadow">
                 <input
                   class="form-control round-border p-3 m-lg-0 m-auto"
@@ -74,11 +75,14 @@
             <!-- ################## 2nd section search form  end ################## -->
 
             <!-- ################## 3rd section  start################## -->
-            <div class="col-lg-2 pt-lg-0 pt-4">
+            <div class="col-xl-2 col-lg-3 py-4">
               <ul class="nav-links list-unstyled m-0">
                 <li>
                   <div class="text-center header-upper-menu">
-                    <a href="#" class="d-flex align-items-center">
+                    <a
+                      href="#"
+                      class="d-flex justify-content-center align-items-center"
+                    >
                       <span class="link_name">Download App</span>
                       <i class="bx bxs-chevron-down arrow ms-3"></i>
                     </a>
@@ -90,26 +94,37 @@
             <!-- ################## 3rd section search form  end ################## -->
 
             <!-- ################## 3rd section  start################## -->
-            <div class="col-lg-1">
+            <div class="col-xl-2">
               <div class="current-info">
                 <ul class="m-0 current-info-images list-unstyled">
                   <li>
                     <a href="#" class="alert-icons"
-                      ><img src="images" class="img-fluid" alt="bell" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="alert-icons">
-                      <img src="images/Bell.png" class="img-fluid" alt="" />
+                      ><img
+                        src="images/signal icon.png"
+                        class="img-fluid"
+                        alt="bell"
+                      />
+                      <div class="notification-counter">5</div>
                     </a>
                   </li>
                   <li>
                     <a href="#" class="alert-icons">
                       <img
-                        src="images/cart.png"
+                        src="images/bell icon.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                      <div class="notification-counter bell">6</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="alert-icons">
+                      <img
+                        src="images/addCart.png"
                         class="img-fluid w-100"
                         alt=""
                       />
+                      <div class="notification-counter cart">7</div>
                     </a>
                   </li>
                 </ul>
@@ -120,28 +135,38 @@
         </div>
       </div>
     </header>
+    <!-- ##################### Header ending ########################## -->
 
-    <div class="hamburger-menu">
-      <div class="hamburger-upper">
-        <img src="images/bx-menu.svg" class="img-fluid m-auto" alt="" />
-      </div>
-    </div>
+    <!-- ################## HAMBURGER MENU ################## -->
+    <ul class="hamburger-menu m-0 nav-link list-unstyled">
+      <li class="hamburger-upper">
+        <img src="images/bx-menu.svg" alt="" />
+      </li>
+    </ul>
 
-    <main class="d-flex justify-content-between">
-      <div class="sidebar close">
+    <main>
+      <!-- ################## SIDEBAR MENU ################## -->
+      <div class="sidebar">
         <ul class="nav-links">
-          <li>
-            <a href="#">
-              <img src="images/shop.svg" class="zoom" alt="shop" />
-              <span class="link_name">Shop</span>
+          <li class="active">
+            <a href="gallery.html" title="gallery">
+              <img
+                src="images/shop-active.svg"
+                class="zoom"
+                id="shop"
+                alt="shop"
+              />
+              <span class="link_name golden-color">Shop </span
+              ><span class="active-dot me-5"></span>
             </a>
+
             <ul class="sub-menu blank">
               <li><a class="link_name" href="#">Shop</a></li>
             </ul>
           </li>
 
           <li>
-            <a href="#">
+            <a href="sell.html" title="sell">
               <img src="images/dashboard.svg" class="zoom" alt="Sell / List" />
               <span class="link_name">Sell / list</span>
             </a>
@@ -151,45 +176,37 @@
           </li>
 
           <li>
-            <a href="#">
+            <a href="view-profile.html" title="my profile">
               <img src="images/contact.svg" class="zoom" alt="My profile" />
               <span class="link_name">My profile</span>
             </a>
           </li>
           <li>
             <div class="icon-link">
-              <a href="#">
+              <a href="community.html" title="community">
                 <img src="images/community.svg" class="zoom" alt="community" />
                 <span class="link_name">Community</span>
-                <span class="active-dot"></span>
-                <!-- <i class="bx bxs-chevron-down arrow"></i> -->
               </a>
             </div>
-            <ul class="sub-menu">
-              <li><a class="link_name" href="#">Community</a></li>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Card Design</a></li>
-              <li><a href="#">Login Form</a></li>
-            </ul>
           </li>
 
           <li>
             <div class="icon-link">
-              <a href="#">
+              <a href="my-wallet.html" title="my wallet">
                 <img src="images/my wallet.svg" class="zoom" alt="My wallet" />
                 <span class="link_name">My wallet</span>
               </a>
             </div>
-            <!-- <ul class="sub-menu">
-            <li><a class="link_name" href="#">My wallet</a></li>
-            <li><a href="#">HTML & CSS</a></li>
-            <li><a href="#">JavaScript</a></li>
-            <li><a href="#">PHP MySQL</a></li>
-          </ul> -->
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">My wallet</a></li>
+              <li><a href="#">HTML & CSS</a></li>
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">PHP MySQL</a></li>
+            </ul>
           </li>
 
           <li>
-            <a href="#" title="Dashboard">
+            <a href="dashboard.html" title="Dashboard">
               <img src="images/dashboard.svg" class="zoom" alt="Dashboard" />
               <span class="link_name">Dashboard</span>
             </a>
@@ -199,7 +216,7 @@
           </li>
 
           <li>
-            <a href="#" title="Favorite">
+            <a href="favourite.html" title="Favorite">
               <img src="images/heart.svg" class="zoom" alt="My Favorite" />
               <span class="link_name">My Favorites</span>
             </a>
@@ -210,22 +227,22 @@
 
           <li>
             <div class="icon-link">
-              <a href="#">
+              <a href="chat.html" title="chat">
                 <img src="images/chat.svg" class="zoom" alt="Chat" />
                 <span class="link_name">Chat</span>
-                <i class="bx bxs-chevron-down arrow"></i>
+                <!-- <i class="bx bxs-chevron-down arrow"></i> -->
               </a>
             </div>
-            <ul class="sub-menu">
+            <!-- <ul class="sub-menu">
               <li><a class="link_name" href="#">Chat</a></li>
               <li><a href="#">UI Face</a></li>
               <li><a href="#">Pigments</a></li>
               <li><a href="#">Box icons</a></li>
-            </ul>
+            </ul> -->
           </li>
 
           <li>
-            <a href="#">
+            <a href="faq.html" title="FAQ">
               <img src="images/faq.svg" class="zoom" alt="FAQ" />
               <span class="link_name">FAQ</span>
             </a>
@@ -235,7 +252,7 @@
           </li>
 
           <li>
-            <a href="#">
+            <a href="contact us.html" title="contact us">
               <img src="images/pointer.svg" class="zoom" alt="Contact Us" />
               <span class="link_name">Contact Us</span>
             </a>
@@ -253,9 +270,10 @@
 
         <!-- </div> -->
       </div>
+      <!-- ################## MAIN SECTION FOR PAGE ################## -->
 
       <section class="user-info community-with-user-info">
-        <div class="community-hold m-3">
+        <div class="community-hold mx-5 mb-5">
           <nav class="pt-3">
             <div
               class="
@@ -270,7 +288,7 @@
               id="nav-tab"
               role="tablist"
             >
-              <span class="community-heading p-3">Community</span>
+              <span class="community-heading p-3">Add:</span>
               <div class="nav-item dropdown community-drpdown-tabs">
                 <a
                   class="nav-link community-tabs dropdown-toggle m-3"
@@ -278,7 +296,7 @@
                   href="#"
                   role="button"
                   id="dynamic-tab-changer"
-                  >Comissioner</a
+                  >Convention</a
                 >
                 <ul class="dropdown-menu list-of-tabs">
                   <li class="award">
@@ -290,7 +308,7 @@
                       type="button"
                       role="tab"
                       aria-controls="nav-profile"
-                      >Award</a
+                      >Cosplayer Awards</a
                     >
                   </li>
                   <li class="alabama">
@@ -303,7 +321,7 @@
                       role="tab"
                       aria-controls="nav-profile"
                       aria-selected="false"
-                      >Alabama</a
+                      >Commissioner</a
                     >
                   </li>
                   <li class="workshop">
@@ -343,7 +361,7 @@
                       role="tab"
                       aria-controls="nav-profile"
                       aria-selected="false"
-                      >Add Conventions</a
+                      >Conventions</a
                     >
                   </li>
 
@@ -357,7 +375,7 @@
                       role="tab"
                       aria-controls="nav-profile"
                       aria-selected="false"
-                      >New Offers</a
+                      >Quick Offer</a
                     >
                   </li>
 
@@ -371,7 +389,7 @@
                       role="tab"
                       aria-controls="nav-profile"
                       aria-selected="false"
-                      >New Item</a
+                      >Searching for</a
                     >
                   </li>
                 </ul>
@@ -434,7 +452,7 @@
                   "
                 >
                   <li class="px-3">
-                    <span class="choose-status">Choose status</span>
+                    <span class="choose-status">Choose state:</span>
                   </li>
                   <li class="status-selectbox px-3">
                     <select class="for-select-golden m-auto">
@@ -488,7 +506,7 @@
                       "
                     >
                       <li class="px-3">
-                        <span class="choose-status">Choose status</span>
+                        <span class="choose-status">Choose state:</span>
                       </li>
                       <li class="status-selectbox px-3">
                         <select class="for-select-golden m-auto">
@@ -526,7 +544,7 @@
               <!--##### tab completed ###### -->
 
               <div
-                class="tab-pane fade show active"
+                class="tab-pane fade show "
                 id="nav-home"
                 role="tabpanel"
                 aria-labelledby="nav-home-tab"
@@ -545,7 +563,7 @@
                       "
                     >
                       <li class="px-3">
-                        <span class="choose-status">Choose status</span>
+                        <span class="choose-status">Choose state:</span>
                       </li>
                       <li class="status-selectbox px-3">
                         <select class="for-select-golden m-auto">
@@ -622,7 +640,7 @@
               </div>
               <!-- #### tab completed ###-->
               <div
-                class="tab-pane fade"
+                class="tab-pane fade show active"
                 id="add-conventions"
                 role="tabpanel"
                 aria-labelledby="nav-contact-tab"

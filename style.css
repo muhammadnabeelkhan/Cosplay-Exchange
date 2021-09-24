@@ -58,6 +58,9 @@ img[src="images/shop.svg"] {
 .border-radius-40 {
   border-radius: 40px !important;
 }
+.border-radius-12{
+ border-radius: 12.7401px !important;
+}
 #shop {
   fill: #f5a623 !important ;
 }
@@ -2250,10 +2253,17 @@ color:#fff !important;
     background: rgba(205, 205, 205, 0.5);
     border-radius: 7px;
     font-size: 0.8rem;
-    margin-r
+  
 }
 .radio-1st:checked{
   background: linear-gradient( 
     180deg, rgba(196, 56, 239, 0.66) 0%, rgba(255, 64, 154, 0.66) 100% );
+}
+.media-content{
+  word-wrap: break-word;
+  min-width: 100px;
+}
+.offer-round-img{
+  width: 50px;
 }
  

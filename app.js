@@ -101,17 +101,17 @@ $(document).ready(function () {
         if (getListContent.classList.contains("alabama")) {
           tabBtn.innerHTML = "Commisioner";
         } else if (getListContent.classList.contains("workshop")) {
-          tabBtn.innerHTML = "Work Shop";
+          tabBtn.innerHTML = "Workshop";
         } else if (getListContent.classList.contains("addNew")) {
-          tabBtn.innerHTML = "Add New";
+          tabBtn.innerHTML = "Media";
         } else if (getListContent.classList.contains("award")) {
           tabBtn.innerHTML = "Award";
         } else if (getListContent.classList.contains("addConventions")) {
           tabBtn.innerHTML = "Add Convention";
         } else if (getListContent.classList.contains("newOffers")) {
           tabBtn.innerHTML = "New Offer";
-        } else if (getListContent.classList.contains("addItem")) {
-          tabBtn.innerHTML = "New Item";
+        } else if (getListContent.classList.contains("cosplay-group")) {
+          tabBtn.innerHTML = "Cosplay Group";
         }
       });
     });

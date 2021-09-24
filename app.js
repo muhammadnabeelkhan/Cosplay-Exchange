@@ -90,7 +90,7 @@ $(document).ready(function () {
   //Tabs changer
   let tabBtn = document.getElementById("dynamic-tab-changer");
   let tabList = document.querySelector(".list-of-tabs");
-  if(tabList){
+  if (tabList) {
     let tabChilds = tabList.childNodes;
     let getListContent;
     console.log(tabChilds);
@@ -116,12 +116,27 @@ $(document).ready(function () {
       });
     });
   }
- 
+
   //SELL PAGE RADIO BUTTONS
-  $(".custom-radio").on("click", function(){
-      $(".custom-radio").removeClass("active");
-      let val = $(this).addClass("active").data("value");
-      $("#condition-radio").val(val);
+  $(".custom-radio").on("click", function () {
+    $(".custom-radio").removeClass("active");
+    let val = $(this).addClass("active").data("value");
+    $("#condition-radio").val(val);
   });
-  
+  //NOTIFICATION DROPDOWN
+
+  var down = false;
+
+  $("#bell").click(function (e) {
+    var color = $(this).text();
+    if (down) {
+      $("#notifications-box").css("height", "0px");
+      $("#notifications-box").css("opacity", "0");
+      down = false;
+    } else {
+      $("#notifications-box").css("height", "auto");
+      $("#notifications-box").css("opacity", "1");
+      down = true;
+    }
+  });
 });

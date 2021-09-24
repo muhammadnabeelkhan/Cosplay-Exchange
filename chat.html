@@ -31,14 +31,15 @@
     <title>Chat</title>
   </head>
   <body>
-    <!-- ##################### Header starting ########################## -->
-
-    <header class="main-header p-3 p-lg-0">
+    <!-- ##################### HEADER ########################## -->
+    <header class="main-header p-lg-0">
       <!-- ################## 1st section logo  start ################## -->
-      <div class="row g-0 align-items-center justify-content-center">
+      <div class="row g-0 p-0">
         <div class="col-lg-3">
-          <div class="header-left-content">
-            <div class="brand-image m-lg-0 m-auto">
+          <div class="header-left-content h-100">
+            <div
+              class="brand-image h-100 dynamic-background-changer m-lg-0 m-auto"
+            >
               <img
                 src="images/ce logo.png"
                 class="img-fluid m-lg-0 m-auto"
@@ -49,15 +50,15 @@
         </div>
         <!-- ################## 1st section logo  end ################## -->
         <div class="col-lg-9">
-          <div class="row g-0 align-items-center ps-lg-4">
-            <div class="col-lg-3 pe-md-3 pt-lg-0 pt-4">
+          <div class="row g-0 align-items-center px-4">
+            <div class="col-lg-3 pe-md-3 pt-4">
               <div class="gallery-info">
-                <h3>Dashboard</h3>
-                <small>Some text or maybe not</small>
+                <h3>Chat</h3>
+                <small>Some text or maybe not.</small>
               </div>
             </div>
             <!-- ################## 2nd section search form  start################## -->
-            <div class="col-lg-5 text-center pt-lg-0 pt-4">
+            <div class="col-xl-5 col-lg-6 text-center pt-lg-0 pt-4">
               <div class="input-group parentOfSearch boxshadow">
                 <input
                   class="form-control round-border p-3 m-lg-0 m-auto"
@@ -73,12 +74,15 @@
             <!-- ################## 2nd section search form  end ################## -->
 
             <!-- ################## 3rd section  start################## -->
-            <div class="col-lg-2 pt-lg-0 pt-4">
+            <div class="col-xl-2 col-lg-3 py-4">
               <ul class="nav-links list-unstyled m-0">
                 <li>
                   <div class="text-center header-upper-menu">
-                    <a href="#" class="d-flex align-items-center">
-                      <span class="link_name ms-lg-2">Download App</span>
+                    <a
+                      href="#"
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      <span class="link_name">Download App</span>
                       <i class="bx bxs-chevron-down arrow ms-3"></i>
                     </a>
                   </div>
@@ -89,20 +93,50 @@
             <!-- ################## 3rd section search form  end ################## -->
 
             <!-- ################## 3rd section  start################## -->
-            <!-- <div class="col-lg-1">
-<div class="current-info">
-  <ul class="m-0 current-info-images list-unstyled">
-    <li><a href="#" class="alert-icons"><img src="images/FeedIcon.png"  class="img-fluid"  alt="bell"> </a></li>
-    <li><a href="#" class="alert-icons"> <img src="images/Bell.png"  class="img-fluid"   alt=""> </a></li>
-    <li><a href="#" class="alert-icons" > <img src="images/cart.png"  class="img-fluid w-100" alt=""> </a></li>
-  </ul>
-</div>
-</div> -->
+            <div class="col-xl-2">
+              <div class="current-info">
+                <ul class="m-0 current-info-images list-unstyled">
+                  <li>
+                    <a href="#" class="alert-icons"
+                      ><img
+                        src="images/signal icon.png"
+                        class="img-fluid"
+                        alt="bell"
+                      />
+                      <div class="notification-counter">5</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="alert-icons">
+                      <img
+                        src="images/bell icon.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                      <div class="notification-counter bell">6</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="alert-icons">
+                      <img
+                        src="images/addCart.png"
+                        class="img-fluid w-100"
+                        alt=""
+                      />
+                      <div class="notification-counter cart">7</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <!-- ################## 3rd section search form  end ################## -->
           </div>
         </div>
       </div>
     </header>
+    <!-- ##################### Header ending ########################## -->
+
+    <!-- ################## HAMBURGER MENU ################## -->
     <ul class="hamburger-menu m-0 nav-link list-unstyled">
       <li class="hamburger-upper">
         <img src="images/bx-menu.svg" alt="" />
@@ -110,20 +144,28 @@
     </ul>
 
     <main>
+      <!-- ################## SIDEBAR MENU ################## -->
       <div class="sidebar">
         <ul class="nav-links">
-          <li>
-            <a href="#">
-              <img src="images/shop.svg" class="zoom" alt="shop" />
-              <span class="link_name">Shop</span>
+          <li class="active">
+            <a href="gallery.html" title="gallery">
+              <img
+                src="images/shop-active.svg"
+                class="zoom"
+                id="shop"
+                alt="shop"
+              />
+              <span class="link_name golden-color">Shop </span
+              ><span class="active-dot me-5"></span>
             </a>
+
             <ul class="sub-menu blank">
               <li><a class="link_name" href="#">Shop</a></li>
             </ul>
           </li>
 
           <li>
-            <a href="#">
+            <a href="sell.html" title="sell">
               <img src="images/dashboard.svg" class="zoom" alt="Sell / List" />
               <span class="link_name">Sell / list</span>
             </a>
@@ -133,33 +175,25 @@
           </li>
 
           <li>
-            <a href="#">
+            <a href="view-profile.html" title="my profile">
               <img src="images/contact.svg" class="zoom" alt="My profile" />
               <span class="link_name">My profile</span>
             </a>
           </li>
           <li>
             <div class="icon-link">
-              <a href="#">
+              <a href="community.html" title="community">
                 <img src="images/community.svg" class="zoom" alt="community" />
                 <span class="link_name">Community</span>
-                <i class="bx bxs-chevron-down arrow"></i>
               </a>
             </div>
-            <ul class="sub-menu">
-              <li><a class="link_name" href="#">Community</a></li>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Card Design</a></li>
-              <li><a href="#">Login Form</a></li>
-            </ul>
           </li>
 
           <li>
             <div class="icon-link">
-              <a href="#">
+              <a href="my-wallet.html" title="my wallet">
                 <img src="images/my wallet.svg" class="zoom" alt="My wallet" />
                 <span class="link_name">My wallet</span>
-                <i class="bx bxs-chevron-down arrow"></i>
               </a>
             </div>
             <ul class="sub-menu">
@@ -171,10 +205,9 @@
           </li>
 
           <li>
-            <a href="#" title="Dashboard">
+            <a href="dashboard.html" title="Dashboard">
               <img src="images/dashboard.svg" class="zoom" alt="Dashboard" />
-              <span class="link_name golden-color">Dashboard</span
-              ><span class="active-dot"></span>
+              <span class="link_name">Dashboard</span>
             </a>
             <ul class="sub-menu blank">
               <li><a class="link_name" href="#">Dashboard</a></li>
@@ -182,7 +215,7 @@
           </li>
 
           <li>
-            <a href="#" title="Favorite">
+            <a href="favourite.html" title="Favorite">
               <img src="images/heart.svg" class="zoom" alt="My Favorite" />
               <span class="link_name">My Favorites</span>
             </a>
@@ -193,22 +226,22 @@
 
           <li>
             <div class="icon-link">
-              <a href="#">
+              <a href="chat.html" title="chat">
                 <img src="images/chat.svg" class="zoom" alt="Chat" />
                 <span class="link_name">Chat</span>
-                <i class="bx bxs-chevron-down arrow"></i>
+                <!-- <i class="bx bxs-chevron-down arrow"></i> -->
               </a>
             </div>
-            <ul class="sub-menu">
+            <!-- <ul class="sub-menu">
               <li><a class="link_name" href="#">Chat</a></li>
               <li><a href="#">UI Face</a></li>
               <li><a href="#">Pigments</a></li>
               <li><a href="#">Box icons</a></li>
-            </ul>
+            </ul> -->
           </li>
 
           <li>
-            <a href="#">
+            <a href="faq.html" title="FAQ">
               <img src="images/faq.svg" class="zoom" alt="FAQ" />
               <span class="link_name">FAQ</span>
             </a>
@@ -218,7 +251,7 @@
           </li>
 
           <li>
-            <a href="#">
+            <a href="contact us.html" title="contact us">
               <img src="images/pointer.svg" class="zoom" alt="Contact Us" />
               <span class="link_name">Contact Us</span>
             </a>
@@ -236,12 +269,13 @@
 
         <!-- </div> -->
       </div>
+      <!-- ################## MAIN SECTION FOR PAGE ################## -->
 
-      <section class="information m-5">
+      <section class="information m-5 mt-0">
         <div class="chat p-lg-5 p-2">
           <div class="row g-1">
-            <div class="col-md-5 col-2">
-              <div class="user-identification p-3">
+            <div class="col-md-5 col-2 chat-applicant">
+              <div class="user-identification p-3 mt-5">
                 <ul
                   class="
                     list-unstyled
@@ -260,6 +294,336 @@
                     />
                   </li>
                   <li class="user-name=parent">
+                    <span class="user-name white-color d-md-block d-none">
+                      Nabeel Khan
+                    </span>
+                  </li>
+                </ul>
+                <ul
+                  class="
+                    list-unstyled
+                    d-flex
+                    user-information
+                    align-items-center
+                    justify-content-center
+                  "
+                >
+                  <li class="me-md-3 p-2">
+                    <img
+                      src="images/owais.jpg"
+                      class="d-block user-image m-md-0 m-auto"
+                      alt="user Image"
+                    />
+                  </li>
+                  <li class="user-name-parent">
+                    <span class="user-name white-color d-md-block d-none">
+                      Nabeel Khan
+                    </span>
+                  </li>
+                </ul>
+                <ul
+                  class="
+                    list-unstyled
+                    d-flex
+                    user-information
+                    align-items-center
+                    justify-content-center
+                  "
+                >
+                  <li class="me-md-3 p-2">
+                    <img
+                      src="images/owais.jpg"
+                      class="d-block user-image m-md-0 m-auto"
+                      alt="user Image"
+                    />
+                  </li>
+                  <li class="user-name-parent">
+                    <span class="user-name white-color d-md-block d-none">
+                      Nabeel Khan
+                    </span>
+                  </li>
+                </ul>
+                <ul
+                  class="
+                    list-unstyled
+                    d-flex
+                    user-information
+                    align-items-center
+                    justify-content-center
+                  "
+                >
+                  <li class="me-md-3 p-2">
+                    <img
+                      src="images/owais.jpg"
+                      class="d-block user-image m-md-0 m-auto"
+                      alt="user Image"
+                    />
+                  </li>
+                  <li class="user-name-parent">
+                    <span class="user-name white-color d-md-block d-none">
+                      Nabeel Khan
+                    </span>
+                  </li>
+                </ul>
+                <ul
+                  class="
+                    list-unstyled
+                    d-flex
+                    user-information
+                    align-items-center
+                    justify-content-center
+                  "
+                >
+                  <li class="me-md-3 p-2">
+                    <img
+                      src="images/owais.jpg"
+                      class="d-block user-image m-md-0 m-auto"
+                      alt="user Image"
+                    />
+                  </li>
+                  <li class="user-name-parent">
+                    <span class="user-name white-color d-md-block d-none">
+                      Nabeel Khan
+                    </span>
+                  </li>
+                </ul>
+                <ul
+                  class="
+                    list-unstyled
+                    d-flex
+                    user-information
+                    align-items-center
+                    justify-content-center
+                  "
+                >
+                  <li class="me-md-3 p-2">
+                    <img
+                      src="images/owais.jpg"
+                      class="d-block user-image m-md-0 m-auto"
+                      alt="user Image"
+                    />
+                  </li>
+                  <li class="user-name-parent">
+                    <span class="user-name white-color d-md-block d-none">
+                      Nabeel Khan
+                    </span>
+                  </li>
+                </ul>
+                <ul
+                  class="
+                    list-unstyled
+                    d-flex
+                    user-information
+                    align-items-center
+                    justify-content-center
+                  "
+                >
+                  <li class="me-md-3 p-2">
+                    <img
+                      src="images/owais.jpg"
+                      class="d-block user-image m-md-0 m-auto"
+                      alt="user Image"
+                    />
+                  </li>
+                  <li class="user-name-parent">
+                    <span class="user-name white-color d-md-block d-none">
+                      Nabeel Khan
+                    </span>
+                  </li>
+                </ul>
+                <ul
+                  class="
+                    list-unstyled
+                    d-flex
+                    user-information
+                    align-items-center
+                    justify-content-center
+                  "
+                >
+                  <li class="me-md-3 p-2">
+                    <img
+                      src="images/owais.jpg"
+                      class="d-block user-image m-md-0 m-auto"
+                      alt="user Image"
+                    />
+                  </li>
+                  <li class="user-name-parent">
+                    <span class="user-name white-color d-md-block d-none">
+                      Nabeel Khan
+                    </span>
+                  </li>
+                </ul>
+                <ul
+                  class="
+                    list-unstyled
+                    d-flex
+                    user-information
+                    align-items-center
+                    justify-content-center
+                  "
+                >
+                  <li class="me-md-3 p-2">
+                    <img
+                      src="images/owais.jpg"
+                      class="d-block user-image m-md-0 m-auto"
+                      alt="user Image"
+                    />
+                  </li>
+                  <li class="user-name-parent">
+                    <span class="user-name white-color d-md-block d-none">
+                      Nabeel Khan
+                    </span>
+                  </li>
+                </ul>
+                <ul
+                  class="
+                    list-unstyled
+                    d-flex
+                    user-information
+                    align-items-center
+                    justify-content-center
+                  "
+                >
+                  <li class="me-md-3 p-2">
+                    <img
+                      src="images/owais.jpg"
+                      class="d-block user-image m-md-0 m-auto"
+                      alt="user Image"
+                    />
+                  </li>
+                  <li class="user-name-parent">
+                    <span class="user-name white-color d-md-block d-none">
+                      Nabeel Khan
+                    </span>
+                  </li>
+                </ul>
+                <ul
+                  class="
+                    list-unstyled
+                    d-flex
+                    user-information
+                    align-items-center
+                    justify-content-center
+                  "
+                >
+                  <li class="me-md-3 p-2">
+                    <img
+                      src="images/owais.jpg"
+                      class="d-block user-image m-md-0 m-auto"
+                      alt="user Image"
+                    />
+                  </li>
+                  <li class="user-name-parent">
+                    <span class="user-name white-color d-md-block d-none">
+                      Nabeel Khan
+                    </span>
+                  </li>
+                </ul>
+                <ul
+                  class="
+                    list-unstyled
+                    d-flex
+                    user-information
+                    align-items-center
+                    justify-content-center
+                  "
+                >
+                  <li class="me-md-3 p-2">
+                    <img
+                      src="images/owais.jpg"
+                      class="d-block user-image m-md-0 m-auto"
+                      alt="user Image"
+                    />
+                  </li>
+                  <li class="user-name-parent">
+                    <span class="user-name white-color d-md-block d-none">
+                      Nabeel Khan
+                    </span>
+                  </li>
+                </ul>
+                <ul
+                  class="
+                    list-unstyled
+                    d-flex
+                    user-information
+                    align-items-center
+                    justify-content-center
+                  "
+                >
+                  <li class="me-md-3 p-2">
+                    <img
+                      src="images/owais.jpg"
+                      class="d-block user-image m-md-0 m-auto"
+                      alt="user Image"
+                    />
+                  </li>
+                  <li class="user-name-parent">
+                    <span class="user-name white-color d-md-block d-none">
+                      Nabeel Khan
+                    </span>
+                  </li>
+                </ul>
+                <ul
+                  class="
+                    list-unstyled
+                    d-flex
+                    user-information
+                    align-items-center
+                    justify-content-center
+                  "
+                >
+                  <li class="me-md-3 p-2">
+                    <img
+                      src="images/owais.jpg"
+                      class="d-block user-image m-md-0 m-auto"
+                      alt="user Image"
+                    />
+                  </li>
+                  <li class="user-name-parent">
+                    <span class="user-name white-color d-md-block d-none">
+                      Nabeel Khan
+                    </span>
+                  </li>
+                </ul>
+                <ul
+                  class="
+                    list-unstyled
+                    d-flex
+                    user-information
+                    align-items-center
+                    justify-content-center
+                  "
+                >
+                  <li class="me-md-3 p-2">
+                    <img
+                      src="images/owais.jpg"
+                      class="d-block user-image m-md-0 m-auto"
+                      alt="user Image"
+                    />
+                  </li>
+                  <li class="user-name-parent">
+                    <span class="user-name white-color d-md-block d-none">
+                      Nabeel Khan
+                    </span>
+                  </li>
+                </ul>
+                <ul
+                  class="
+                    list-unstyled
+                    d-flex
+                    user-information
+                    align-items-center
+                    justify-content-center
+                  "
+                >
+                  <li class="me-md-3 p-2">
+                    <img
+                      src="images/owais.jpg"
+                      class="d-block user-image m-md-0 m-auto"
+                      alt="user Image"
+                    />
+                  </li>
+                  <li class="user-name-parent">
                     <span class="user-name white-color d-md-block d-none">
                       Nabeel Khan
                     </span>
@@ -307,7 +671,43 @@
                     <a href="#" class="btn btn-primary px-4">Block Chat</a>
                   </li>
                 </ul>
-                <ul class="list-unstyled d-flex flex-column">
+                <ul class="list-unstyled d-flex flex-column messages-body">
+                  <li class="going-message-parent mt-2">
+                    <p class="p-3 white-color going-message-inner">asdkaddd</p>
+                  </li>
+                  <li class="coming-message-parent align-self-end mt-2">
+                    <p class="p-3 white-color coming-message-inner">
+                      asdkadddzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzz
+                      zzzzzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzz
+                    </p>
+                  </li>
+                  <li class="going-message-parent mt-2">
+                    <p class="p-3 white-color going-message-inner">asdkaddd</p>
+                  </li>
+                  <li class="coming-message-parent align-self-end mt-2">
+                    <p class="p-3 white-color coming-message-inner">
+                      asdkadddzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzz
+                      zzzzzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzz
+                    </p>
+                  </li>
+                  <li class="going-message-parent mt-2">
+                    <p class="p-3 white-color going-message-inner">asdkaddd</p>
+                  </li>
+                  <li class="coming-message-parent align-self-end mt-2">
+                    <p class="p-3 white-color coming-message-inner">
+                      asdkadddzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzz
+                      zzzzzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzz
+                    </p>
+                  </li>
+                  <li class="going-message-parent mt-2">
+                    <p class="p-3 white-color going-message-inner">asdkaddd</p>
+                  </li>
+                  <li class="coming-message-parent align-self-end mt-2">
+                    <p class="p-3 white-color coming-message-inner">
+                      asdkadddzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzz
+                      zzzzzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzz
+                    </p>
+                  </li>
                   <li class="going-message-parent mt-2">
                     <p class="p-3 white-color going-message-inner">asdkaddd</p>
                   </li>

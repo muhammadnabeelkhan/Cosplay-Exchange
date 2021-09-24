@@ -27,6 +27,9 @@ img[src="images/shop.svg"] {
   fill: #e01066 !important;
   color: #e01066 !important;
 }
+#border-0{
+  border:0px;
+}
 .bg-none{
   background: none!important;
 }
@@ -37,8 +40,8 @@ img[src="images/shop.svg"] {
   letter-spacing: 5px!important;
 }
 .btn-primary:focus {
-  outline: none;
-  box-shadow: none;
+  outline: none !important;
+  box-shadow: none !important;
 }
 .bg-purple {
   background: purple;
@@ -1964,6 +1967,11 @@ background: url("imagees/2nd-image.jpg") !important;
     margin: 20px !important ;
    }
 }
+@media screen and (max-width: 400px) {
+  .conventions-table-head tr{
+    font-size: 1rem !important;
+  }
+}
 /* #################### Community ########################### */
 .tabs-tem-container {
   height: 100% !important;
@@ -2108,6 +2116,7 @@ border: 0 !important;
 .conventions-table-head tr th {
   border-bottom-width: 0px !important;
 }
+
 
 .table-body {
   background: rgba(26, 25, 57, 0.5);

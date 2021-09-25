@@ -9,7 +9,23 @@ $(document).ready(function () {
   let hamburgerBackground = document.querySelector(".hamburger-menu");
   let sideBox = document.querySelector(".nav_links li");
   let homePaddingL = document.querySelector(".home-section");
+  let body = document.querySelector("body");
+  let screenSize = window.innerWidth;
+  function update() {
+    console.log(window.innerWidth);
+    if (window.innerWidth <= 960) {
+      console.log(window.innerWidth);
+      sidebar.classList.add("close");
+      console.log("class added");
+      console.log(sidebar.classList);
+    } else {
+      sidebar.classList.remove("close");
+    }
+  }
+  /* ##################### menu toogler #############################  */
 
+  window.addEventListener("resize", update);
+  update();
   console.log(arrow);
   arrow.forEach((item) => {
     item.addEventListener("click", (e) => {
@@ -71,21 +87,6 @@ $(document).ready(function () {
       homePaddingL.style.margin = "0 0 0 171.26px !mportant";
     }
   });
-
-  /* ##################### menu toogler #############################  */
-  let body = document.querySelector("body");
-  let screenSize = window.innerWidth;
-  window.addEventListener("resize", update);
-  function update() {
-    console.log(window.innerWidth);
-    if (window.innerWidth <= 960) {
-      console.log(window.innerWidth);
-      sidebar.classList.add("close");
-      console.log(sidebar.classList);
-    } else {
-      sidebar.classList.remove("close");
-    }
-  }
 
   //Tabs changer
   let tabBtn = document.getElementById("dynamic-tab-changer");

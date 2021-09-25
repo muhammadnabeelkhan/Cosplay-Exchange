@@ -107,7 +107,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="alert-icons">
+                    <a href="#" class="alert-icons" id="bell">
                       <img
                         src="images/bell icon.png"
                         class="img-fluid"
@@ -115,6 +115,27 @@
                       />
                       <div class="notification-counter bell">6</div>
                     </a>
+                    <div class="notifications" id="notifications-box">
+                      <h2>Notifications - <span>2</span></h2>
+
+                      <div class="notifications-item">
+                        <img src="https://dummyimage.com/720x400" alt="img" />
+                        <div class="text">
+                          <div>You recieved a notification</div>
+                          <div class="small">You recieved a notification</div>
+                        </div>
+                      </div>
+                      <div class="notifications-item">
+                        <img src="https://dummyimage.com/720x400" alt="img" />
+                        <div class="text">
+                          <div class="text">
+                            <div>You recieved a notification</div>
+                            <div class="small">You recieved a notification</div>
+                          </div>
+                        </div>
+                      </div>
+                      <h2 class="m-0 border-0">Mark all as read</h2>
+                    </div>
                   </li>
                   <li>
                     <a href="#" class="alert-icons">
@@ -270,157 +291,166 @@
       </div>
       <!-- ################## MAIN SECTION FOR PAGE ################## -->
 
-      <section class="information m-5 mt-0">
-        <div class="dashboard-bg">
-        <div class="dashboard">
-          <div class="row">
-            <!-- 1st row start-->
-            <div class="col-12">
-              <div class="dashboard-main-content">
-                <a href="#" class="d-block text-decoration-none">
-                  <p class="text-center m-0">
-                    Subscribe: <br />
-                    Current Status: Active <img src="images/clock.svg" alt="" />
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- 1st row end -->
-
-          <div class="row my-4">
-            <!-- 2nd row start-->
-            <div class="col-12">
-              <div class="dashboard-main-content">
-                <a href="#" class="d-block text-decoration-none">
-                  <p class="text-center m-0">
-                    Revenue Received<br />
-                    $100.00
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- 2nd row end -->
-
-          <div class="row">
-            <!-- row 3 start-->
-            <div class="col-md-6 mt-3">
-              <a href="#" class="btn btn-primary">My Listings</a>
-            </div>
-            <div class="col-md-6 mt-3">
-              <a href="#" class="btn btn-primary">My Purchases</a>
-            </div>
-          </div>
-          <!-- row 3 end-->
-        </div>
-        <div class="">
-          <div class="between-horizontal-line"></div>
-        </div>
-
-        <h2 class="text-center cdcd py-4 m-0">Coins</h2>
-        <div class="dashboard-smokey">
-          <div class="dashboard-information">
+      <section
+      class="information home-section all-forms-content mt-0 m-md-5 m-2 my-5"
+      id="sell-section"
+    >
+      <div class="container-fluid">
+        <div class="dashboard-bg mt-sm-0 mt-3">
+          <div class="dashboard">
             <div class="row">
-              <div class="col-sm-6 mt-4">
-                <a
-                  href=""
-                  class="btn btn-primary d-flex justify-content-center"
-                >
-                  <span>Total Coins:</span> <span class="ms-5">10</span></a
-                >
-              </div>
-              <div class="col-sm-6 mt-4">
-                <a href="" class="btn btn-primary d-flex justify-content-center"
-                  ><span>Locked Coins:</span> <span class="ms-5"> 10</span></a
-                >
-              </div>
-              <div class="col-12 mt-4">
-                <a href="" class="btn btn-primary d-flex justify-content-center"
-                  >Available Coins: 10
-                </a>
+              <!-- 1st row start-->
+              <div class="col-12">
+                <div class="dashboard-main-content">
+                  <a href="#" class="d-block text-decoration-none">
+                    <p class="text-center m-0">
+                      Subscribe: <br />
+                      Current Status: Active <img src="images/clock.svg" alt="" />
+                    </p>
+                  </a>
+                </div>
               </div>
             </div>
+            <!-- 1st row end -->
+  
+            <div class="row my-4">
+              <!-- 2nd row start-->
+              <div class="col-12">
+                <div class="dashboard-main-content">
+                  <a href="#" class="d-block text-decoration-none">
+                    <p class="text-center m-0">
+                      Revenue Received<br />
+                      $100.00
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- 2nd row end -->
+  
+            <div class="row">
+              <!-- row 3 start-->
+              <div class="col-md-6 mt-3">
+                <a href="#" class="btn btn-primary">My Listings</a>
+              </div>
+              <div class="col-md-6 mt-3">
+                <a href="#" class="btn btn-primary">My Purchases</a>
+              </div>
+            </div>
+            <!-- row 3 end-->
           </div>
-
-          <div class="dashboard-information">
-            <h3 class="text-center cdcd pb-4">Cosplays</h3>
-            <div class="row pb-3">
-              <div class="col-md-6 mt-4">
-                <a
-                  href=""
-                  class="btn btn-primary d-flex justify-content-around"
-                >
-                  <span>Awaiting Admin Approval:</span>
-                  <span class="ms-5">10</span></a
-                >
+          <div class="">
+            <div class="between-horizontal-line"></div>
+          </div>
+  
+          <h2 class="text-center cdcd py-4 m-0">Coins</h2>
+          <div class="dashboard-smokey">
+            <div class="dashboard-information">
+              <div class="row">
+                <div class="col-sm-6 mt-4">
+                  <a
+                    href=""
+                    class="btn btn-primary d-flex justify-content-center"
+                  >
+                    <span>Total Coins:</span> <span class="ms-5">10</span></a
+                  >
+                </div>
+                <div class="col-sm-6 mt-4">
+                  <a href="" class="btn btn-primary d-flex justify-content-center"
+                    ><span>Locked Coins:</span> <span class="ms-5"> 10</span></a
+                  >
+                </div>
+                <div class="col-12 mt-4">
+                  <a href="" class="btn btn-primary d-flex justify-content-center"
+                    >Available Coins: 10
+                  </a>
+                </div>
               </div>
-              <div class="col-md-6 mt-4">
-                <a href="" class="btn btn-primary d-flex justify-content-around"
-                  ><span class="ps-3">My Posts:</span>
-                  <span class="ms-5"> 10</span></a
-                >
-              </div>
-
-              <div class="col-md-6 mt-4">
-                <a
-                  href=""
-                  class="btn btn-primary d-flex justify-content-around"
-                >
-                  <span>Offer Received:</span> <span class="ms-5">10</span></a
-                >
-              </div>
-              <div class="col-md-6 mt-4">
-                <a href="" class="btn btn-primary d-flex justify-content-around"
-                  ><span>Sold:</span> <span class="ms-5"> 10</span></a
-                >
-              </div>
-              <div class="col-md-6 mt-4">
-                <a
-                  href=""
-                  class="
-                    btn btn-primary
-                    d-flex
-                    justify-content-around
-                    dark-purple
-                  "
-                >
-                  <span>Awaiting Your Shipment:</span>
-                  <span class="ms-5">10</span></a
-                >
-              </div>
-              <div class="col-md-6 mt-4">
-                <a
-                  href=""
-                  class="
-                    btn btn-primary
-                    w-100
-                    d-flex
-                    justify-content-around
-                    dark-purple
-                  "
-                  ><span>Shipped:</span> <span class="ms-5"> 10</span></a
-                >
-              </div>
-
-              <div class="col-12 mt-4">
-                <a
-                  href=""
-                  class="
-                    btn btn-primary
-                    d-flex
-                    justify-content-around
-                    dark-purple
-                  "
-                  ><span>Received and Accepted:</span>
-                  <span class="ms-5"> 10</span>
-                </a>
+            </div>
+  
+            <div class="dashboard-information">
+              <h3 class="text-center cdcd pb-4">Cosplays</h3>
+              <div class="row pb-3">
+                <div class="col-md-6 mt-4">
+                  <a
+                    href=""
+                    class="btn btn-primary d-flex justify-content-around"
+                  >
+                    <span>Awaiting Admin Approval:</span>
+                    <span class="ms-5">10</span></a
+                  >
+                </div>
+                <div class="col-md-6 mt-4">
+                  <a href="" class="btn btn-primary d-flex justify-content-around"
+                    ><span class="ps-3">My Posts:</span>
+                    <span class="ms-5"> 10</span></a
+                  >
+                </div>
+  
+                <div class="col-md-6 mt-4">
+                  <a
+                    href=""
+                    class="btn btn-primary d-flex justify-content-around"
+                  >
+                    <span>Offer Received:</span> <span class="ms-5">10</span></a
+                  >
+                </div>
+                <div class="col-md-6 mt-4">
+                  <a href="" class="btn btn-primary d-flex justify-content-around"
+                    ><span>Sold:</span> <span class="ms-5"> 10</span></a
+                  >
+                </div>
+                <div class="col-md-6 mt-4">
+                  <a
+                    href=""
+                    class="
+                      btn btn-primary
+                      d-flex
+                      justify-content-around
+                      dark-purple
+                    "
+                  >
+                    <span>Awaiting Your Shipment:</span>
+                    <span class="ms-5">10</span></a
+                  >
+                </div>
+                <div class="col-md-6 mt-4">
+                  <a
+                    href=""
+                    class="
+                      btn btn-primary
+                      w-100
+                      d-flex
+                      justify-content-around
+                      dark-purple
+                    "
+                    ><span>Shipped:</span> <span class="ms-5"> 10</span></a
+                  >
+                </div>
+  
+                <div class="col-12 mt-4">
+                  <a
+                    href=""
+                    class="
+                      btn btn-primary
+                      d-flex
+                      justify-content-around
+                      dark-purple
+                    "
+                    ><span>Received and Accepted:</span>
+                    <span class="ms-5"> 10</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
+   
+        <!-- container end -->
       </div>
-      </section>
+    </section>
+
+
     </main>
 
     <!-- ##################### Header ending ########################## -->

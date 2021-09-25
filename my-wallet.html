@@ -107,7 +107,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="alert-icons">
+                    <a href="#" class="alert-icons" id="bell">
                       <img
                         src="images/bell icon.png"
                         class="img-fluid"
@@ -115,6 +115,27 @@
                       />
                       <div class="notification-counter bell">6</div>
                     </a>
+                    <div class="notifications" id="notifications-box">
+                      <h2>Notifications - <span>2</span></h2>
+
+                      <div class="notifications-item">
+                        <img src="https://dummyimage.com/720x400" alt="img" />
+                        <div class="text">
+                          <div>You recieved a notification</div>
+                          <div class="small">You recieved a notification</div>
+                        </div>
+                      </div>
+                      <div class="notifications-item">
+                        <img src="https://dummyimage.com/720x400" alt="img" />
+                        <div class="text">
+                          <div class="text">
+                            <div>You recieved a notification</div>
+                            <div class="small">You recieved a notification</div>
+                          </div>
+                        </div>
+                      </div>
+                      <h2 class="m-0 border-0">Mark all as read</h2>
+                    </div>
                   </li>
                   <li>
                     <a href="#" class="alert-icons">
@@ -271,34 +292,42 @@
       </div>
       <!-- ################## MAIN SECTION FOR PAGE ################## -->
 
-    <section class="user-info  my-wallet-containewith-user-info-class  px-md-5 px-2 mt-5 ">
-        <div class="my-wallet-container h-100 d-flex flex-column justify-content-center border-radius-25 py-5" id="smoke-bg">
-          <div class="my-wallet-items d-flex align-items-center justify-content-center flex-column">
-            <div class="wallet-coin-description">
-              <img src="images/cosplay coin.png" class="img-fluid" alt="coin">
-              <p class="text-center pt-3">My Coins: 10</p>
-            </div>
-            <p class=" mt-5">
-              
-            </p>
-            <div class="mb-3 wallet-input">
-                <label for="formGroupExampleInput1"  class="wallet-text mb-2">Enter your coupon if you have one.</label>
-                <input type="text" class="form-control transparency-form-input p-3 cosplay-code" id="formGroupExampleInput1"
-                  placeholder="Coupon Code" />
+
+
+
+      <section
+        class="information home-section all-forms-content mt-0 m-md-5 m-2 my-5"
+        id="sell-section"
+      >
+        <div class="container-fluid">
+          <div class="my-wallet-container h-100 d-flex flex-column justify-content-center border-radius-25 py-5">
+            <div class="my-wallet-items d-flex align-items-center justify-content-center flex-column">
+              <div class="wallet-coin-description">
+                <img src="images/cosplay coin.png" class="img-fluid" alt="coin">
+                <p class="text-center pt-3">My Coins: 10</p>
               </div>
-              <a href="#" class="btn btn-primary mb-5">Apply Coupon</a>
-              <p class="white-color wallet-last-text px-sm-0 px-4">Share our website for more cosplay coins. </p>
-            <a href="#" class="btn btn-primary">
-              <img src="images/Simple share.svg" alt="share">
-              <span class="ms-2">Share</span>
-            </a>
-
-
+              <p class=" mt-5">
+                
+              </p>
+              <div class="mb-3 wallet-input">
+                  <label for="formGroupExampleInput1"  class="wallet-text mb-2">Enter your coupon to add coins</label>
+                  <input type="text" class="form-control transparency-form-input p-3 cosplay-code" id="formGroupExampleInput1"
+                    placeholder="Coupon Code" />
+                </div>
+                <a href="#" class="btn btn-primary mb-5 bg-inherit">Apply Coupon</a>
+                <p class="white-color wallet-last-text px-sm-0 px-4">Share our website for more cosplay coins. </p>
+              <a href="#" class="btn btn-primary bg-inherit">
+                <img src="images/Simple share.svg" alt="share">
+                <span class="ms-2">Share</span>
+              </a>
+  
+  
+            </div>
+  
+  
           </div>
-
-
+          
         </div>
-        
       </section>
 
   </main>

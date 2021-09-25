@@ -28,17 +28,18 @@
     <link rel="stylesheet" href="all.min.css" />
 
     <link rel="stylesheet" href="style.css" />
-    <title>form</title>
+    <title>Cosplay Exchange - Contact Us</title>
   </head>
   <body>
-    <!-- ##################### Header starting ########################## -->
-
-    <header class="main-header p-3 p-lg-0">
+    <!-- ##################### HEADER ########################## -->
+    <header class="main-header p-lg-0">
       <!-- ################## 1st section logo  start ################## -->
-      <div class="row g-0 align-items-center justify-content-center">
+      <div class="row g-0 p-0">
         <div class="col-lg-3">
-          <div class="header-left-content">
-            <div class="brand-image m-lg-0 m-auto">
+          <div class="header-left-content h-100">
+            <div
+              class="brand-image h-100 dynamic-background-changer m-lg-0 m-auto"
+            >
               <img
                 src="images/ce logo.png"
                 class="img-fluid m-lg-0 m-auto"
@@ -49,83 +50,143 @@
         </div>
         <!-- ################## 1st section logo  end ################## -->
         <div class="col-lg-9">
-          <div class="row g-0 align-items-center ps-lg-4">
-
-          <div class="col-lg-3 pe-md-3 pt-lg-0 pt-4">
-            <div class="gallery-info">
-              <h3>Contact Us</h3>
-              <small>Some text or maybe not</small>
+          <div class="row g-0 align-items-center px-4">
+            <div class="col-lg-3 pe-md-3 pt-4">
+              <div class="gallery-info">
+                <h3>Contact Us</h3>
+                <small>Some text or maybe not.</small>
+              </div>
             </div>
-          </div>
-          <!-- ################## 2nd section search form  start################## -->
-          <div class="col-lg-5 text-center pt-lg-0 pt-4">
-            <div class="input-group parentOfSearch boxshadow">
-              <input
-                class="form-control round-border p-3 m-lg-0 m-auto"
-                type="text"
-                placeholder="Search All Cosplays"
-                id="search-food"
-              />
-              <a href="#" class="search-btn" title="Search Food">
-                <i class="fas fa-search"></i>
-              </a>
+            <!-- ################## 2nd section search form  start################## -->
+            <div class="col-xl-5 col-lg-6 text-center pt-lg-0 pt-4">
+              <div class="input-group parentOfSearch boxshadow">
+                <input
+                  class="form-control round-border p-3 m-lg-0 m-auto"
+                  type="text"
+                  placeholder="Search All Cosplays"
+                  id="search-food"
+                />
+                <a href="#" class="search-btn" title="Search Food">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
             </div>
-          </div>
-          <!-- ################## 2nd section search form  end ################## -->
+            <!-- ################## 2nd section search form  end ################## -->
 
-          <!-- ################## 3rd section  start################## -->
-          <div class="col-lg-2 pt-lg-0 pt-4">
-            <ul class="nav-links list-unstyled m-0">
-              <li>
-                <div class="text-center header-upper-menu">
-                  <a href="#" class="d-flex align-items-center">
-                    <span class="link_name">Download App</span>
-                    <i class="bx bxs-chevron-down arrow ms-3"></i>
-                  </a>
-                </div>
-              </li>
-            </ul>
-            <div>
-              <!-- ################## 3rd section search form  end ################## -->
-
-              <!-- ################## 3rd section  start################## -->
-              <!-- <div class="col-lg-1">
-<div class="current-info">
-  <ul class="m-0 current-info-images list-unstyled">
-    <li><a href="#" class="alert-icons"><img src="images/FeedIcon.png"  class="img-fluid"  alt="bell"> </a></li>
-    <li><a href="#" class="alert-icons"> <img src="images/Bell.png"  class="img-fluid"   alt=""> </a></li>
-    <li><a href="#" class="alert-icons" > <img src="images/cart.png"  class="img-fluid w-100" alt=""> </a></li>
-  </ul>
-</div>
-</div> -->
-              <!-- ################## 3rd section search form  end ################## -->
+            <!-- ################## 3rd section  start################## -->
+            <div class="col-xl-2 col-lg-3 py-4">
+              <ul class="nav-links list-unstyled m-0">
+                <li>
+                  <div class="text-center header-upper-menu">
+                    <a
+                      href="#"
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      <span class="link_name">Download App</span>
+                      <i class="bx bxs-chevron-down arrow ms-3"></i>
+                    </a>
+                  </div>
+                </li>
+              </ul>
             </div>
+
+            <!-- ################## 3rd section search form  end ################## -->
+
+            <!-- ################## 3rd section  start################## -->
+            <div class="col-xl-2">
+              <div class="current-info">
+                <ul class="m-0 current-info-images list-unstyled">
+                  <li>
+                    <a href="#" class="alert-icons"
+                      ><img
+                        src="images/signal icon.png"
+                        class="img-fluid"
+                        alt="bell"
+                      />
+                      <div class="notification-counter">5</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="alert-icons" id="bell">
+                      <img
+                        src="images/bell icon.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                      <div class="notification-counter bell">6</div>
+                    </a>
+                    <div class="notifications" id="notifications-box">
+                      <h2>Notifications - <span>2</span></h2>
+
+                      <div class="notifications-item">
+                        <img src="https://dummyimage.com/720x400" alt="img" />
+                        <div class="text">
+                          <div>You recieved a notification</div>
+                          <div class="small">You recieved a notification</div>
+                        </div>
+                      </div>
+                      <div class="notifications-item">
+                        <img src="https://dummyimage.com/720x400" alt="img" />
+                        <div class="text">
+                          <div class="text">
+                            <div>You recieved a notification</div>
+                            <div class="small">You recieved a notification</div>
+                          </div>
+                        </div>
+                      </div>
+                      <h2 class="m-0 border-0">Mark all as read</h2>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" class="alert-icons">
+                      <img
+                        src="images/addCart.png"
+                        class="img-fluid w-100"
+                        alt=""
+                      />
+                      <div class="notification-counter cart">7</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- ################## 3rd section search form  end ################## -->
           </div>
         </div>
       </div>
     </header>
+    <!-- ##################### Header ending ########################## -->
 
-    <div class="hamburger-menu">
-      <div class="hamburger-upper">
-        <img src="images/bx-menu.svg" class="img-fluid m-auto" alt="" />
-      </div>
-    </div>
+    <!-- ################## HAMBURGER MENU ################## -->
+    <ul class="hamburger-menu m-0 nav-link list-unstyled">
+      <li class="hamburger-upper">
+        <img src="images/bx-menu.svg" alt="" />
+      </li>
+    </ul>
 
-    <main class="d-flex justify-content-between">
+    <main>
+      <!-- ################## SIDEBAR MENU ################## -->
       <div class="sidebar">
         <ul class="nav-links">
-          <li>
-            <a href="#">
-              <img src="images/shop.svg" class="zoom" alt="shop" />
-              <span class="link_name">Shop</span>
+          <li class="active">
+            <a href="gallery.html" title="gallery">
+              <img
+                src="images/shop-active.svg"
+                class="zoom"
+                id="shop"
+                alt="shop"
+              />
+              <span class="link_name golden-color">Shop </span
+              ><span class="active-dot me-5"></span>
             </a>
+
             <ul class="sub-menu blank">
               <li><a class="link_name" href="#">Shop</a></li>
             </ul>
           </li>
 
           <li>
-            <a href="#">
+            <a href="sell.html" title="sell">
               <img src="images/dashboard.svg" class="zoom" alt="Sell / List" />
               <span class="link_name">Sell / list</span>
             </a>
@@ -135,30 +196,23 @@
           </li>
 
           <li>
-            <a href="#">
+            <a href="view-profile.html" title="my profile">
               <img src="images/contact.svg" class="zoom" alt="My profile" />
               <span class="link_name">My profile</span>
             </a>
           </li>
           <li>
             <div class="icon-link">
-              <a href="#">
+              <a href="community.html" title="community">
                 <img src="images/community.svg" class="zoom" alt="community" />
                 <span class="link_name">Community</span>
-                <i class="bx bxs-chevron-down arrow"></i>
               </a>
             </div>
-            <ul class="sub-menu">
-              <li><a class="link_name" href="#">Community</a></li>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Card Design</a></li>
-              <li><a href="#">Login Form</a></li>
-            </ul>
           </li>
 
           <li>
             <div class="icon-link">
-              <a href="#">
+              <a href="my-wallet.html" title="my wallet">
                 <img src="images/my wallet.svg" class="zoom" alt="My wallet" />
                 <span class="link_name">My wallet</span>
               </a>
@@ -172,7 +226,7 @@
           </li>
 
           <li>
-            <a href="#" title="Dashboard">
+            <a href="dashboard.html" title="Dashboard">
               <img src="images/dashboard.svg" class="zoom" alt="Dashboard" />
               <span class="link_name">Dashboard</span>
             </a>
@@ -182,7 +236,7 @@
           </li>
 
           <li>
-            <a href="#" title="Favorite">
+            <a href="favourite.html" title="Favorite">
               <img src="images/heart.svg" class="zoom" alt="My Favorite" />
               <span class="link_name">My Favorites</span>
             </a>
@@ -193,22 +247,22 @@
 
           <li>
             <div class="icon-link">
-              <a href="#">
+              <a href="chat.html" title="chat">
                 <img src="images/chat.svg" class="zoom" alt="Chat" />
                 <span class="link_name">Chat</span>
-                <i class="bx bxs-chevron-down arrow"></i>
+                <!-- <i class="bx bxs-chevron-down arrow"></i> -->
               </a>
             </div>
-            <ul class="sub-menu">
+            <!-- <ul class="sub-menu">
               <li><a class="link_name" href="#">Chat</a></li>
               <li><a href="#">UI Face</a></li>
               <li><a href="#">Pigments</a></li>
               <li><a href="#">Box icons</a></li>
-            </ul>
+            </ul> -->
           </li>
 
           <li>
-            <a href="#">
+            <a href="faq.html" title="FAQ">
               <img src="images/faq.svg" class="zoom" alt="FAQ" />
               <span class="link_name">FAQ</span>
             </a>
@@ -218,7 +272,7 @@
           </li>
 
           <li>
-            <a href="#">
+            <a href="contact us.html" title="contact us">
               <img src="images/pointer.svg" class="zoom" alt="Contact Us" />
               <span class="link_name">Contact Us</span>
             </a>
@@ -234,41 +288,54 @@
           </div>
         </ul>
 
-        
+        <!-- </div> -->
       </div>
+      <!-- ################## MAIN SECTION FOR PAGE ################## -->
+     
 
-      <section class="user-info P-50to10 upper-user-info-padding">
+      <section
+      class="information home-section all-forms-content mt-0 m-md-5 m-2 my-5"
+      id="sell-section"
+    >
+      <div class="container-fluid">
         <div class="all-user-content p-sm-5 p-2">
           <!-- #################### row starts ################## -->
 
-          <div class="row pb-5">
+          <div class="row pb-5 justify-content-center">
             <!-- ################# 1st col starts ######################  -->
 
-            <div class="col-md-6 pe-md-5 order-md-1 order-2 p-3">
+            <div class="col-md-8 pe-md-5 order-md-1 order-2 p-3">
+              <div class="form-image-info text-center mb-5">
+                <img
+                  src="images/cosplay-doll.png"
+                  class="img-fluid p-sm-0 p-3"
+                  alt="Cosplay Girl"
+                />
+              </div>
               <div class="mb-3">
-                <label for="Name" class="form-label">NAME*</label>
+                <label for="Name" class="form-label form-upper-title">NAME</label>
                 <input
                   type="text"
-                  class="form-control contact-us-input"
+                  class="form-control transparency-form-input p-3 cosplay-code"
                   id="Name"
                   placeholder="Name"
                 />
               </div>
               <div class="mb-3">
-                <label for="Email" class="form-label">EMAIL</label>
+                <label for="Email" class="form-label form-upper-title">EMAIL</label>
                 <input
                   type="email"
-                  class="form-control contact-us-input"
+                  class="form-control transparency-form-input p-3 cosplay-code"
                   id="Email"
                   placeholder="EMAIL"
                 />
               </div>
               <!-- 3rd -->
               <div class="mb-3">
-                <label for="Subject" class="form-label">SUBJECT</label>
+                <label for="Subject" class="form-label form-upper-title">SUBJECT</label>
                 <input
                   type="text"
-                  class="form-control contact-us-input"
+                  class="form-control transparency-form-input p-3 cosplay-code"
                   id="Subject"
                   placeholder="SUBJECT"
                 />
@@ -277,12 +344,12 @@
 
               <!-- 4th -->
               <div class="mb-3">
-                <label for="PHONE NUMBERt" class="form-label"
+                <label for="PHONE NUMBERt" class="form-label form-upper-title"
                   >PHONE NUMBER*</label
                 >
                 <input
                   type="text"
-                  class="form-control contact-us-input"
+                  class="form-control transparency-form-input p-3 cosplay-code"
                   id="PHONE NUMBER"
                   placeholder="PHONE NUMBER"
                 />
@@ -291,7 +358,7 @@
 
               <div class="form-biodata">
                 <p class="bio-description">MESSAGE</p>
-                <textarea name="biodata" id="" cols="30" rows="5"></textarea>
+                <textarea name="biodata" id="" class="form-control transparency-form-input  border-0" cols="30" rows="5"></textarea>
               </div>
               <a href="#" class="btn btn-primary mt-4" id="send-btn">Send</a>
             </div>
@@ -299,21 +366,15 @@
             <!-- ##################### 1st col end ######################-->
             <!-- ##################### 2nd col starts ######################-->
 
-            <div class="col-md-6 order-md-2 order-1">
-              <div class="form-image-info text-center">
-                <img
-                  src="images/cosplay-doll.png"
-                  class="img-fluid p-sm-0 p-3"
-                  alt="Cosplay Girl"
-                />
-              </div>
-            </div>
           </div>
           <!-- ##################### 2nd col starts ######################-->
 
           <!-- ######################### row ended ########################## -->
         </div>
-      </section>
+   
+        <!-- container end -->
+      </div>
+    </section>
     </main>
 
     <!-- ##################### Header ending ########################## -->

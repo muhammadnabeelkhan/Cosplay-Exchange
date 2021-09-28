@@ -23,6 +23,10 @@ body {
   --color-05040: #05040c;
   --border-radius-40: 40px;
 }
+textarea:focus{
+box-shadow: none;
+outline:none;
+}
 
 .icon {
   cursor: pointer;
@@ -147,6 +151,7 @@ img[src="images/shop.svg"] {
   outline: none !important;
   box-shadow: none !important;
 }
+
 .bg-purple {
   background: purple;
 }
@@ -177,6 +182,9 @@ img[src="images/shop.svg"] {
 .black {
   background: black;
 }
+.border-15{
+  border-radius: 15px;
+}
 .upper-sidebar {
   background-color: var(--light-black) !important;
 }
@@ -196,7 +204,7 @@ main {
   background-color: var(--light-black) !important;
   width: 268px;
   transition: all 0.5s ease;
-  display: flex;
+  display: none;
   align-items: center;
   height: 80px !important;
 }
@@ -728,6 +736,7 @@ main {
     background-color: var(--light-black);
   }
   .hamburger-menu {
+    display: flex;
     width: 60px;
   }
 }
@@ -879,7 +888,7 @@ main {
   color: var(--CDCD);
 }
 .information {
-  background: url("images/2nd-smoke-bg.png") !important;
+  background: url("images/2nd-smoke-bg.png") ;
   background-position: center;
   background-repeat: no-repeat !important;
   background-size: cover;
@@ -1083,15 +1092,28 @@ main {
   background-color: var(--light-grey);
 }
 .last-profile-btn {
-  padding: 15px 10px;
+  padding: 10px 15px;
   font-size: 1.5rem;
   width: 253px;
-  background-color: var(--golden) !important;
   color: black !important;
   border-radius: 0;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
+  border:none;
+  background:url("images/gold-button.png");
+  background-position:center;
+background-size:cover;
+}
+.last-profile-btn:hover{
+  background:url("images/gold-button.png") !important;
+  background-position:center !important;
+  background-size:cover !important;
+  border:none !important;
+} 
+.live-check-label{
+  letter-spacing: 0.21em;
+
 }
 .P-50to10 {
   padding: 50px;
@@ -1161,6 +1183,17 @@ color: #CDCDCD;
 .contact-us-input:focus {
   background-color: var(--light-grey) !important;
 }
+.choose-files-btn{
+  position:absolute;
+  width:160px;
+  opacity:0;
+  left:0%;
+}
+
+.edit-profile{
+  background:#06050E !important;
+
+}
 .form-biodata textarea {
   width: 100%;
   border-radius: 15px !important;
@@ -1174,10 +1207,22 @@ color: #CDCDCD;
 .biodata-buttons a img {
   width: 30px;
 }
+.edit-inputbox{
+  background: rgba(255, 255, 255, 0.18) !important;
+backdrop-filter: blur(14px);
+border-radius: 15px;
+border:none;
+}
+.edit-inputbox:focus{
+  outline:none !important;
+  box-shadow:none !important
+}
 .customize-hit-btn {
   width: 250px !important;
   margin: auto !important;
   border-radius: 15px !important;
+  background: inherit;
+  border:1px solid var(--golden);
 }
 .user-info .btn-primary {
   color: var(--CDCD);
@@ -1185,13 +1230,13 @@ color: #CDCDCD;
   border-color: var(--golden);
 }
 .all-user-content .btn-primary:hover {
-  background-color: black;
+  background: #06050E;
+  
   border: 1px solid var(--golden);
 }
 /* ################## 4th page styling end ############## */
 /* ################# Sell/List ####################### */
-.sell-section {
-}
+
 .cdcd {
   color: var(--CDCD);
 }
@@ -1916,7 +1961,11 @@ input[type="checkbox"].option-checkbox:checked + label::before {
   background: #979797;
 }
 .faq {
-  
+  background: rgba(30, 30, 30, 0.49);
+backdrop-filter: blur(26px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 16px;
   /* Note: backdrop-filter has minimal browser support */
   color: var(--CDCD);
   border-radius: 16px;
@@ -1957,6 +2006,8 @@ input[type="checkbox"].option-checkbox:checked + label::before {
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
+  background:inherit;
+  border: 1px solid var(--golden) !important;
 }
 #send-btn {
   background: linear-gradient(136.67deg, #ff409a 8.34%, #c438ef 95.26%);

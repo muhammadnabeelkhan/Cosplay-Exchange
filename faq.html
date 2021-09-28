@@ -31,14 +31,15 @@
     <title>FAQ</title>
   </head>
   <body>
-    <!-- ##################### Header starting ########################## -->
-
-    <header class="main-header p-3 p-lg-0">
+    <!-- ##################### HEADER ########################## -->
+    <header class="main-header p-lg-0">
       <!-- ################## 1st section logo  start ################## -->
-      <div class="row g-0 align-items-center justify-content-center">
+      <div class="row g-0 p-0">
         <div class="col-lg-3">
-          <div class="header-left-content">
-            <div class="brand-image m-lg-0 m-auto">
+          <div class="header-left-content h-100">
+            <div
+              class="brand-image h-100 dynamic-background-changer m-lg-0 m-auto"
+            >
               <img
                 src="images/ce logo.png"
                 class="img-fluid m-lg-0 m-auto"
@@ -49,15 +50,15 @@
         </div>
         <!-- ################## 1st section logo  end ################## -->
         <div class="col-lg-9">
-          <div class="row g-0 align-items-center ps-lg-4">
-            <div class="col-lg-3 pe-md-3 pt-lg-0 pt-4">
+          <div class="row g-0 align-items-center px-4">
+            <div class="col-lg-3 pe-md-3 pt-4">
               <div class="gallery-info">
-                <h3>FAQ</h3>
-                <small>Some text or maybe not</small>
+                <h3>Sell / List</h3>
+                <small>Share a listing for 5 cosplay coins.</small>
               </div>
             </div>
             <!-- ################## 2nd section search form  start################## -->
-            <div class="col-lg-5 text-center pt-lg-0 pt-4">
+            <div class="col-xl-5 col-lg-6 text-center pt-lg-0 pt-4">
               <div class="input-group parentOfSearch boxshadow">
                 <input
                   class="form-control round-border p-3 m-lg-0 m-auto"
@@ -73,12 +74,15 @@
             <!-- ################## 2nd section search form  end ################## -->
 
             <!-- ################## 3rd section  start################## -->
-            <div class="col-lg-2 pt-lg-0 pt-4">
+            <div class="col-xl-2 col-lg-3 py-4">
               <ul class="nav-links list-unstyled m-0">
                 <li>
                   <div class="text-center header-upper-menu">
-                    <a href="#" class="d-flex align-items-center">
-                      <span class="link_name ms-lg-2">Download App</span>
+                    <a
+                      href="#"
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      <span class="link_name">Download App</span>
                       <i class="bx bxs-chevron-down arrow ms-3"></i>
                     </a>
                   </div>
@@ -89,20 +93,71 @@
             <!-- ################## 3rd section search form  end ################## -->
 
             <!-- ################## 3rd section  start################## -->
-            <!-- <div class="col-lg-1">
-<div class="current-info">
-  <ul class="m-0 current-info-images list-unstyled">
-    <li><a href="#" class="alert-icons"><img src="images/FeedIcon.png"  class="img-fluid"  alt="bell"> </a></li>
-    <li><a href="#" class="alert-icons"> <img src="images/Bell.png"  class="img-fluid"   alt=""> </a></li>
-    <li><a href="#" class="alert-icons" > <img src="images/cart.png"  class="img-fluid w-100" alt=""> </a></li>
-  </ul>
-</div>
-</div> -->
+            <div class="col-xl-2">
+              <div class="current-info">
+                <ul class="m-0 current-info-images list-unstyled">
+                  <li>
+                    <a href="#" class="alert-icons"
+                      ><img
+                        src="images/signal icon.png"
+                        class="img-fluid"
+                        alt="bell"
+                      />
+                      <div class="notification-counter">5</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="alert-icons" id="bell">
+                      <img
+                        src="images/bell icon.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                      <div class="notification-counter bell">6</div>
+                    </a>
+                    <div class="notifications" id="notifications-box">
+                      <h2>Notifications - <span>2</span></h2>
+
+                      <div class="notifications-item">
+                        <img src="https://dummyimage.com/720x400" alt="img" />
+                        <div class="text">
+                          <div>You recieved a notification</div>
+                          <div class="small">You recieved a notification</div>
+                        </div>
+                      </div>
+                      <div class="notifications-item">
+                        <img src="https://dummyimage.com/720x400" alt="img" />
+                        <div class="text">
+                          <div class="text">
+                            <div>You recieved a notification</div>
+                            <div class="small">You recieved a notification</div>
+                          </div>
+                        </div>
+                      </div>
+                      <h2 class="m-0 border-0">Mark all as read</h2>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" class="alert-icons">
+                      <img
+                        src="images/addCart.png"
+                        class="img-fluid w-100"
+                        alt=""
+                      />
+                      <div class="notification-counter cart">7</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <!-- ################## 3rd section search form  end ################## -->
           </div>
         </div>
       </div>
     </header>
+    <!-- ##################### Header ending ########################## -->
+
+    <!-- ################## HAMBURGER MENU ################## -->
     <ul class="hamburger-menu m-0 nav-link list-unstyled">
       <li class="hamburger-upper">
         <img src="images/bx-menu.svg" alt="" />
@@ -110,20 +165,28 @@
     </ul>
 
     <main>
+      <!-- ################## SIDEBAR MENU ################## -->
       <div class="sidebar">
         <ul class="nav-links">
-          <li>
-            <a href="#">
-              <img src="images/shop.svg" class="zoom" alt="shop" />
-              <span class="link_name">Shop</span>
+          <li class="active">
+            <a href="gallery.html" title="gallery">
+              <img
+                src="images/shop-active.svg"
+                class="zoom"
+                id="shop"
+                alt="shop"
+              />
+              <span class="link_name golden-color">Shop </span
+              ><span class="active-dot me-5"></span>
             </a>
+
             <ul class="sub-menu blank">
               <li><a class="link_name" href="#">Shop</a></li>
             </ul>
           </li>
 
           <li>
-            <a href="#">
+            <a href="sell.html" title="sell">
               <img src="images/dashboard.svg" class="zoom" alt="Sell / List" />
               <span class="link_name">Sell / list</span>
             </a>
@@ -133,33 +196,25 @@
           </li>
 
           <li>
-            <a href="#">
+            <a href="view-profile.html" title="my profile">
               <img src="images/contact.svg" class="zoom" alt="My profile" />
               <span class="link_name">My profile</span>
             </a>
           </li>
           <li>
             <div class="icon-link">
-              <a href="#">
+              <a href="community.html" title="community">
                 <img src="images/community.svg" class="zoom" alt="community" />
                 <span class="link_name">Community</span>
-                <i class="bx bxs-chevron-down arrow"></i>
               </a>
             </div>
-            <ul class="sub-menu">
-              <li><a class="link_name" href="#">Community</a></li>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Card Design</a></li>
-              <li><a href="#">Login Form</a></li>
-            </ul>
           </li>
 
           <li>
             <div class="icon-link">
-              <a href="#">
+              <a href="my-wallet.html" title="my wallet">
                 <img src="images/my wallet.svg" class="zoom" alt="My wallet" />
                 <span class="link_name">My wallet</span>
-                <i class="bx bxs-chevron-down arrow"></i>
               </a>
             </div>
             <ul class="sub-menu">
@@ -171,7 +226,7 @@
           </li>
 
           <li>
-            <a href="#" title="Dashboard">
+            <a href="dashboard.html" title="Dashboard">
               <img src="images/dashboard.svg" class="zoom" alt="Dashboard" />
               <span class="link_name">Dashboard</span>
             </a>
@@ -181,7 +236,7 @@
           </li>
 
           <li>
-            <a href="#" title="Favorite">
+            <a href="favourite.html" title="Favorite">
               <img src="images/heart.svg" class="zoom" alt="My Favorite" />
               <span class="link_name">My Favorites</span>
             </a>
@@ -192,25 +247,24 @@
 
           <li>
             <div class="icon-link">
-              <a href="#">
+              <a href="chat.html" title="chat">
                 <img src="images/chat.svg" class="zoom" alt="Chat" />
                 <span class="link_name">Chat</span>
-                <i class="bx bxs-chevron-down arrow"></i>
+                <!-- <i class="bx bxs-chevron-down arrow"></i> -->
               </a>
             </div>
-            <ul class="sub-menu">
+            <!-- <ul class="sub-menu">
               <li><a class="link_name" href="#">Chat</a></li>
               <li><a href="#">UI Face</a></li>
               <li><a href="#">Pigments</a></li>
               <li><a href="#">Box icons</a></li>
-            </ul>
+            </ul> -->
           </li>
 
           <li>
-            <a href="#">
+            <a href="faq.html" title="FAQ">
               <img src="images/faq.svg" class="zoom" alt="FAQ" />
-              <span class="link_name golden-color">FAQ</span
-              ><span class="active-dot"></span>
+              <span class="link_name">FAQ</span>
             </a>
             <ul class="sub-menu blank">
               <li><a class="link_name" href="#">FAQ</a></li>
@@ -218,7 +272,7 @@
           </li>
 
           <li>
-            <a href="#">
+            <a href="contact us.html" title="contact us">
               <img src="images/pointer.svg" class="zoom" alt="Contact Us" />
               <span class="link_name">Contact Us</span>
             </a>
@@ -236,86 +290,87 @@
 
         <!-- </div> -->
       </div>
+      <!-- ################## MAIN SECTION FOR PAGE ################## -->
       <section
-      class="information home-section all-forms-content mt-0 m-md-5 m-2 my-5"
-      id="sell-section"
-    >
-      <div class="container-fluid">
-        <div class="faq pb-5">
-          <div class="QA-1 p-md-5 p-3">
-            <ul class="question list-unstyled d-flex align-items-sm-center">
-              <li class="pe-2 golden-color question-heading">Q</li>
-              <li>
-                What makes this platform so different than other buy, sell,
-                trade groups?
-              </li>
-            </ul>
-            <ul class="answer list-unstyled d-flex ">
-              <li class="pe-2 golden-color answer-heading">A</li>
-              <li class="mt-sm-1 ">
-                <p>
-                  The first and only of its kind, revolutionizing the cosplay
-                  industry. Cosplay-Exchange is one place for all of America's
-                  cosplay listings to be found. You will no longer need to
-                  belong to multiple buy, sell and trade groups and sift through
-                  thousands of unclear ads that may not even be in our country.
-                  Every listing offers free shipping and is shipped within 72
-                  hours. Our platform is for America’s cosplay community. It's
-                  clear, clean and direct with all transactions. It's honest and
-                  fair to the buyer and seller and even managed by cosplayers.
-                  Cosplay-Exchange transactions are done with e-coins (cosplay
-                  coins) so no more spending your paychecks on supplies and
-                  dedicating endless hours of construction time. You simply
-                  select your next cosplay and “exchange” your cosplay coins.
-                  The Cosplay Coin is the revolution to the buy, sell and trade
-                  cosplay community. In addition to Cosplay Coins we are now
-                  accepting all forms of electronic payment. As a seller you
-                  will receive your requested dollar price or Cosplay Coins
-                  (ecoins) when a purchase is made on the site. All members
-                  selling will make a subscription selection. There are two
-                  subscription options, pay per item sold on our platform or a
-                  monthly $8 subscription cost which charges no seller fees and
-                  unlimited listings. With the monthly subscription the seller
-                  receives15 free Cosplay Coins to use each month.
-                </p>
-              </li>
-            </ul>
+        class="information home-section all-forms-content mt-0 mx-md-5 m-2 mb-5"
+        id="sell-section "
+      >
+        <div class="container-fluid p-xl-5 p-md-3 p-sm-5 p-4">
+          <div class="faq pb-5">
+            <div class="QA-1 p-md-5 p-3">
+              <ul class="question list-unstyled d-flex align-items-sm-center">
+                <li class="pe-2 golden-color question-heading">Q</li>
+                <li>
+                  What makes this platform so different than other buy, sell,
+                  trade groups?
+                </li>
+              </ul>
+              <ul class="answer list-unstyled d-flex">
+                <li class="pe-2 golden-color answer-heading">A</li>
+                <li class="mt-sm-1">
+                  <p>
+                    The first and only of its kind, revolutionizing the cosplay
+                    industry. Cosplay-Exchange is one place for all of America's
+                    cosplay listings to be found. You will no longer need to
+                    belong to multiple buy, sell and trade groups and sift
+                    through thousands of unclear ads that may not even be in our
+                    country. Every listing offers free shipping and is shipped
+                    within 72 hours. Our platform is for America’s cosplay
+                    community. It's clear, clean and direct with all
+                    transactions. It's honest and fair to the buyer and seller
+                    and even managed by cosplayers. Cosplay-Exchange
+                    transactions are done with e-coins (cosplay coins) so no
+                    more spending your paychecks on supplies and dedicating
+                    endless hours of construction time. You simply select your
+                    next cosplay and “exchange” your cosplay coins. The Cosplay
+                    Coin is the revolution to the buy, sell and trade cosplay
+                    community. In addition to Cosplay Coins we are now accepting
+                    all forms of electronic payment. As a seller you will
+                    receive your requested dollar price or Cosplay Coins
+                    (ecoins) when a purchase is made on the site. All members
+                    selling will make a subscription selection. There are two
+                    subscription options, pay per item sold on our platform or a
+                    monthly $8 subscription cost which charges no seller fees
+                    and unlimited listings. With the monthly subscription the
+                    seller receives15 free Cosplay Coins to use each month.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="faq-horizontal-divider"></div>
+            <div class="QA-1 p-md-5 p-3">
+              <ul class="question list-unstyled d-flex align-items-sm-center">
+                <li class="pe-2 golden-color question-heading">Q</li>
+                <li>How does Cosplay-Exchange work?</li>
+              </ul>
+              <ul class="answer list-unstyled d-flex">
+                <li class="pe-2 golden-color answer-heading">A</li>
+                <li class="mt-sm-1">
+                  <p>
+                    It's very simple, you create an account, upload your old
+                    cosplays you wish to sell. Your uploads are then reviewed
+                    and approved by admin. Within the listing you will have the
+                    option to accept secure credit card payments and/or you can
+                    accept Cosplay Coins. The exchange rate for Cosplay Coins is
+                    one dollar for one coin Another member decides to purchase
+                    your item and sends an offer for purchase. You receive an
+                    instant text notification of the request. You have 72 hours
+                    to ship the item to the member. After the item is verified
+                    by the postal service as delivered your cosplay coins unlock
+                    or your funds are deposited into your account minus the
+                    seller fees if you do not have the monthly subscription. You
+                    pay $5 on every item sold without a monthly subscription but
+                    you also will receive 5 Cosplay Coins for your use in your
+                    member dashboard.
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="faq-horizontal-divider"></div>
-          <div class="QA-1 p-md-5 p-3">
-            <ul class="question list-unstyled d-flex align-items-sm-center">
-              <li class="pe-2 golden-color question-heading">Q</li>
-              <li>How does Cosplay-Exchange work?</li>
-            </ul>
-            <ul class="answer list-unstyled d-flex">
-              <li class="pe-2 golden-color answer-heading">A</li>
-              <li class="mt-sm-1">
-                <p>
-                  It's very simple, you create an account, upload your old
-                  cosplays you wish to sell. Your uploads are then reviewed and
-                  approved by admin. Within the listing you will have the option
-                  to accept secure credit card payments and/or you can accept
-                  Cosplay Coins. The exchange rate for Cosplay Coins is one
-                  dollar for one coin Another member decides to purchase your
-                  item and sends an offer for purchase. You receive an instant
-                  text notification of the request. You have 72 hours to ship
-                  the item to the member. After the item is verified by the
-                  postal service as delivered your cosplay coins unlock or your
-                  funds are deposited into your account minus the seller fees if
-                  you do not have the monthly subscription. You pay $5 on every
-                  item sold without a monthly subscription but you also will
-                  receive 5 Cosplay Coins for your use in your member dashboard.
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-   
-        <!-- container end -->
-      </div>
-    </section>
 
-      
+          <!-- container end -->
+        </div>
+      </section>
     </main>
 
     <!-- ##################### Header ending ########################## -->

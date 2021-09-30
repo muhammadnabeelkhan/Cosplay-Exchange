@@ -1512,19 +1512,19 @@ input[type="checkbox"].option-checkbox:checked + label::before {
 }
 /* #################### Subscription rate ########################## */
 .subscription {
-  background-image: url("images/2nd-smoke-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: cover;
+
   height: 100%;
   padding-top: 127px;
   border-radius: 40px;
 }
 .subs-box-child {
-  flex-basis: 250px;
+  flex-basis: 275px;
 }
 .subscription-box {
   /* height: 329px; */
+  background: rgba(30, 30, 30, 0.49);
+backdrop-filter: blur(26px);
+  
 
   object-fit: fill;
   position: relative;
@@ -1537,32 +1537,30 @@ input[type="checkbox"].option-checkbox:checked + label::before {
   position: relative;
   padding: 35px;
 }
+.subscription-box 
 .sparkle {
   height: 72px;
   width: 72px;
   position: absolute;
-  right: -5%;
-  top: -8%;
+  right: -15%;
+  top: -10%;
 }
 #silver-bg-border {
-  border: 4px solid;
+  border: 4px solid #f0f0f4;
   border-style: groove;
-  background: url("images/subscriptionSilverBoder.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 #golden-bg-border {
-  border: 4px solid;
+  border: 4px solid #f5d103;
   border-style: groove;
-  background: url("images/subscription-golden-border.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 #orange-bg-border {
-  border: 4px solid;
+  border: 4px solid #be6c1b;
   border-style: groove;
-  background: url("images/subs-orange-border.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1573,7 +1571,6 @@ input[type="checkbox"].option-checkbox:checked + label::before {
   background: url("images/gold-bg.png");
 }
 #orange-btn {
-  border-style: groove;
   background: url("images/orange-bg.png");
 }
 .subscription-box .subscription-rate {
@@ -1610,16 +1607,16 @@ input[type="checkbox"].option-checkbox:checked + label::before {
   /* Note: backdrop-filter has minimal browser support */
   width: 178px;
   height: 47px;
-  border-radius: 16px;
+  border-radius: 7.8125px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--golden);
+   border: 2px solid #f5d103;
 }
 .subscription-box .btn-primary:focus {
   box-shadow: none;
   outline: none;
-  border: 1px solid var(--golden);
+
 }
 .subscription-box h3 {
   font-family: Cormorant !important;
